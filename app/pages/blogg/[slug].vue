@@ -1,10 +1,17 @@
 <script setup lang="ts">
+type BlogPost = {
+  title: string
+  description: string
+  date: string
+  slug: string
+}
+
 const route = useRoute()
 const siteUrl = 'https://magnusenglund.com'
 const slug = route.params.slug as string
 
-const { data: post } = await useAsyncData(`blog-post-${slug}`, () => {
-  return queryCollection('blogg').where('slug', '=', slug).first()
+const { data: post } = await useAsyncData<BlogPost | null>(`blog-post-${slug}`, () => {
+  return queryCollection('blogg').where('slug', '=', slug).first() as Promise<BlogPost | null>
 })
 
 if (!post.value) {

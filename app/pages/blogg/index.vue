@@ -1,8 +1,15 @@
 <script setup lang="ts">
+type BlogPost = {
+  title: string
+  description: string
+  date: string
+  slug: string
+}
+
 const siteUrl = 'https://magnusenglund.com'
 
-const { data: posts } = await useAsyncData('all-blog-posts', () => {
-  return queryCollection('blogg').order('date', 'DESC').all()
+const { data: posts } = await useAsyncData<BlogPost[]>('all-blog-posts', () => {
+  return queryCollection('blogg').order('date', 'DESC').all() as Promise<BlogPost[]>
 })
 
 useSeoMeta({
