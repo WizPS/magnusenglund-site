@@ -1,0 +1,147 @@
+:root {
+  --bg: #f3f6f0;
+  --bg-soft: #dbe7ce;
+  --text: #1a2a1a;
+  --muted: #4f5f4f;
+  --accent: #1f6f4a;
+  --card: #ffffff;
+  --border: #c7d5c0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 15%, var(--bg-soft) 0, transparent 45%),
+    radial-gradient(circle at 85% 0%, #e7efe0 0, transparent 30%),
+    var(--bg);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(860px, 92vw);
+  margin: 0 auto;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 80%, white);
+  backdrop-filter: blur(4px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links a.router-link-active {
+  font-weight: 700;
+}
+
+.site-main {
+  flex: 1;
+  padding: 2rem 0 3rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 1rem 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.page-intro {
+  margin-bottom: 1.5rem;
+}
+
+.blog-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.blog-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+}
+
+.blog-card-date {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.blog-card-title {
+  margin: 0.3rem 0;
+  font-size: 1.3rem;
+}
+
+.blog-card-description {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  font-weight: 600;
+}
+
+.blog-post-meta {
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
