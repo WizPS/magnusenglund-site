@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     name: 'Magnus Englund'
   },
   nitro: {
+    preset: 'static',
     prerender: {
       crawlLinks: true,
       routes: ['/', '/blogg', '/om-magnus']
