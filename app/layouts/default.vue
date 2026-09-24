@@ -6,6 +6,7 @@
         <nav aria-label="Huvudnavigation" class="nav-links">
           <NuxtLink to="/">Hem</NuxtLink>
           <NuxtLink to="/blogg">Blogg</NuxtLink>
+          <NuxtLink to="/analys/val-2026">Valanalys</NuxtLink>
           <NuxtLink to="/om-magnus">Om Magnus</NuxtLink>
         </nav>
       </div>

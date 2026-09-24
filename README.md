@@ -1,5 +1,17 @@
 # Nuxt Minimal Starter
 
+## Valanalys
+
+The Helsingborg 2026 election analysis is generated from the `Personroster`
+sheet in the source workbook. The website only reads the generated JSON file
+at `public/data/val-2026-helsingborg.json`.
+
+To regenerate it after replacing the source workbook:
+
+```bash
+python scripts/convert-valanalys.py "path/to/Valanalys ME.xlsx" public/data/val-2026-helsingborg.json
+```
+
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup

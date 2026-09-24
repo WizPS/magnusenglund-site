@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/blogg', '/om-magnus']
+      routes: ['/', '/blogg', '/om-magnus', '/analys/val-2026']
     }
   },
   routeRules: {

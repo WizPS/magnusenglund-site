@@ -139,6 +139,182 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.analysis-controls {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 28rem;
+  margin: 1.5rem 0;
+}
+
+.analysis-controls label {
+  font-weight: 700;
+}
+
+.analysis-controls select {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--card);
+  font: inherit;
+}
+
+.analysis-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin: 1.5rem 0 2rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--border);
+}
+
+.analysis-summary > div {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  background: var(--card);
+}
+
+.analysis-summary-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.analysis-results-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.analysis-results-heading h2 {
+  margin-bottom: 0.35rem;
+}
+
+.analysis-results-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.analysis-total {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.candidate-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.candidate-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+.candidate-card-expanded {
+  border-color: var(--accent);
+}
+
+.candidate-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 0;
+  color: var(--text);
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.candidate-toggle:hover,
+.candidate-toggle:focus-visible {
+  background: #f5f8f2;
+}
+
+.candidate-name {
+  font-weight: 700;
+}
+
+.candidate-votes {
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.candidate-votes span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.candidate-detail {
+  padding: 0.2rem 1rem 0.9rem;
+  border-top: 1px solid var(--border);
+  background: #fbfcfa;
+}
+
+.candidate-detail-heading,
+.district-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 0.45rem 0;
+}
+
+.candidate-detail-heading {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.district-row {
+  border-top: 1px solid #e7eee3;
+}
+
+.empty-detail,
+.analysis-error,
+.analysis-source {
+  color: var(--muted);
+}
+
+.analysis-source {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .analysis-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-results-heading {
+    display: block;
+  }
+
+  .analysis-total {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
 @media (max-width: 700px) {
   .header-inner {
     flex-direction: column;
