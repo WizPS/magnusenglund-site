@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import electionData from '~/data/val-2026-helsingborg.json'
+
 type District = {
   code: string | null
   name: string
@@ -32,7 +34,8 @@ type ElectionData = {
   parties: Party[]
 }
 
-const { data, error } = await useFetch<ElectionData>('/data/val-2026-helsingborg.json')
+const data = ref<ElectionData>(electionData as ElectionData)
+const error = ref<Error | null>(null)
 
 const selectedPartyCode = ref('L')
 const expandedCandidate = ref<string | null>(null)

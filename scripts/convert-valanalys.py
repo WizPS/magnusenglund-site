@@ -1,7 +1,7 @@
 """Convert the Helsingborg election workbook into a compact JSON data file.
 
 Usage:
-    python scripts/convert-valanalys.py input.xlsx public/data/val-2026-helsingborg.json
+    python scripts/convert-valanalys.py input.xlsx app/data/val-2026-helsingborg.json
 
 The source workbook is not needed by the website at runtime. Only the generated
 JSON is published with the static site.
