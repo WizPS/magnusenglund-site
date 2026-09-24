@@ -36,6 +36,7 @@ type ElectionData = {
 
 const data = ref<ElectionData>(electionData as ElectionData)
 const error = ref<Error | null>(null)
+const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
 
 const selectedPartyCode = ref('L')
 const expandedCandidate = ref<string | null>(null)
@@ -43,6 +44,12 @@ const expandedCandidate = ref<string | null>(null)
 const selectedParty = computed(() => {
   const parties = data.value?.parties || []
   return parties.find((party) => party.code === selectedPartyCode.value) || parties[0]
+})
+
+const sortedParties = computed(() => {
+  return [...(data.value?.parties || [])].sort((a, b) => {
+    return b.partyVotes - a.partyVotes || a.name.localeCompare(b.name, 'sv')
+  })
 })
 
 const formatNumber = (value: number) => new Intl.NumberFormat('sv-SE').format(value)
@@ -76,8 +83,15 @@ useSeoMeta({
   description: 'Analys av personröster och valdistrikt i Helsingborgs kommunval 2026.',
   ogTitle: 'Valanalys 2026 | Magnus Englund',
   ogDescription: 'Personröster och valdistriktsdata för Helsingborgs kommunval 2026.',
+  ogImage: shareImage,
+  ogImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogType: 'website',
-  ogSiteName: 'Magnus Englund'
+  ogSiteName: 'Magnus Englund',
+  twitterCard: 'summary_large_image',
+  twitterImage: shareImage,
+  twitterImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista'
 })
 </script>
 
@@ -100,8 +114,8 @@ useSeoMeta({
       <section class="analysis-controls" aria-labelledby="party-label">
         <label id="party-label" for="party-select">Välj parti</label>
         <select id="party-select" v-model="selectedPartyCode">
-          <option v-for="party in data.parties" :key="party.code" :value="party.code">
-            {{ party.name }} ({{ party.code }})
+          <option v-for="party in sortedParties" :key="party.code" :value="party.code">
+            {{ party.name }} ({{ party.code }}) – {{ formatNumber(party.partyVotes) }} röster
           </option>
         </select>
       </section>
