@@ -195,6 +195,33 @@ useSeoMeta({
         Källa: Valmyndighetens slutliga rösträkning, bearbetad från arbetsbokens blad
         <code>Personroster</code>.
       </p>
+
+      <section class="analysis-next" aria-labelledby="analysis-next-heading">
+        <p class="eyebrow">Mer om sammanhanget</p>
+        <h2 id="analysis-next-heading">Vill du veta mer?</h2>
+        <p>
+          Valanalysen är en del av ett större arkiv om Helsingborg, engagemang och arbetet med att
+          skapa mer värde i vardagen.
+        </p>
+        <div class="link-grid">
+          <NuxtLink to="/om-magnus" class="info-card">
+            <h3>Om Magnus</h3>
+            <p>Lär känna personen bakom kandidaturen.</p>
+          </NuxtLink>
+          <NuxtLink to="/engagemang" class="info-card">
+            <h3>Engagemang i Helsingborg</h3>
+            <p>Om demokrati, valnämnden och Brottsofferjouren.</p>
+          </NuxtLink>
+          <NuxtLink to="/pricing" class="info-card">
+            <h3>Pricing &amp; värde</h3>
+            <p>Om erfarenheten av att förstå och skapa värde.</p>
+          </NuxtLink>
+          <NuxtLink to="/valet-2026" class="info-card">
+            <h3>Valet 2026</h3>
+            <p>Läs arkivet bakom kandidaturen och visionen.</p>
+          </NuxtLink>
+        </div>
+      </section>
     </template>
   </section>
 </template>

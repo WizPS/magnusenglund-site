@@ -5,9 +5,11 @@
         <NuxtLink to="/" class="brand">Magnus Englund</NuxtLink>
         <nav aria-label="Huvudnavigation" class="nav-links">
           <NuxtLink to="/">Hem</NuxtLink>
-          <NuxtLink to="/blogg">Blogg</NuxtLink>
-          <NuxtLink to="/analys/val-2026">Valanalys</NuxtLink>
           <NuxtLink to="/om-magnus">Om Magnus</NuxtLink>
+          <NuxtLink to="/pricing">Pricing</NuxtLink>
+          <NuxtLink to="/engagemang">Engagemang</NuxtLink>
+          <NuxtLink to="/analys/val-2026">Valanalys</NuxtLink>
+          <NuxtLink to="/blogg">Blogg</NuxtLink>
         </nav>
       </div>
     </header>
