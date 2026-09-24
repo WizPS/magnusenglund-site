@@ -148,6 +148,19 @@ h3 {
   text-transform: uppercase;
 }
 
+.analysis-share-image {
+  margin: 1.5rem 0 2rem;
+}
+
+.analysis-share-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
+}
+
 .analysis-controls {
   display: grid;
   gap: 0.4rem;

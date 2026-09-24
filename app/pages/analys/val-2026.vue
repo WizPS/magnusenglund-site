@@ -106,6 +106,16 @@ useSeoMeta({
       </p>
     </header>
 
+    <figure class="analysis-share-image">
+      <img
+        src="/og/valanalys-2026.png"
+        alt="Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista"
+        width="1200"
+        height="630"
+        fetchpriority="high"
+      >
+    </figure>
+
     <p v-if="error" class="analysis-error">
       Valanalysen kunde inte läsas in just nu.
     </p>
