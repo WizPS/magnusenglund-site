@@ -215,24 +215,27 @@ useSeoMeta({
 
       <section class="analysis-results" aria-labelledby="candidate-heading">
         <div class="analysis-results-heading">
-          <div>
+          <div class="analysis-results-grid">
             <h2 id="candidate-heading">Personröster</h2>
+            <div class="analysis-results-count">
+              <span class="analysis-count-label">Antal</span>
+              <span class="analysis-total">
+                {{ formatNumber(selectedParty.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0)) }} totalt
+                <template v-if="show2022Votes && selectedParty2022"> · 2022: {{ formatNumber(totalPersonalVotes2022) }}</template>
+              </span>
+            </div>
             <p>Klicka på en kandidats namn för att se antal personröster per valdistrikt. Välj ett annat parti ovan för att utforska dess kandidater.</p>
-          </div>
-          <div class="analysis-results-actions">
-            <span class="analysis-total">
-              {{ formatNumber(selectedParty.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0)) }} totalt
-              <template v-if="show2022Votes && selectedParty2022"> · 2022: {{ formatNumber(totalPersonalVotes2022) }}</template>
-            </span>
-            <button
-              type="button"
-              class="comparison-button comparison-button-compact"
-              :class="{ 'comparison-button-active': show2022Votes }"
-              :aria-pressed="show2022Votes"
-              @click="show2022Votes = !show2022Votes"
-            >
-              Visa 2022
-            </button>
+            <div class="analysis-results-actions">
+              <button
+                type="button"
+                class="comparison-button comparison-button-compact"
+                :class="{ 'comparison-button-active': show2022Votes }"
+                :aria-pressed="show2022Votes"
+                @click="show2022Votes = !show2022Votes"
+              >
+                Visa 2022
+              </button>
+            </div>
           </div>
         </div>
 
@@ -281,7 +284,12 @@ useSeoMeta({
 
       <p class="analysis-source">
         Källa: Valmyndighetens slutliga rösträkning, bearbetad från arbetsbokens blad
-        <code>Personroster</code>.
+        <code>Personroster</code>. 2018 års partinivå kommer från
+        <a
+          href="https://historik.val.se/val/val2018/slutresultat/K/kommun/12/83/personroster.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Valmyndighetens historiska valpresentation</a>.
       </p>
 
       <section class="analysis-reflection analysis-results-context" aria-labelledby="context-heading">

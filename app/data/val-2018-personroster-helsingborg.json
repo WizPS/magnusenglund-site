@@ -1,0 +1,23 @@
+{
+  "source": {
+    "name": "Valmyndighetens historiska valpresentation 2018",
+    "note": "Partiernas totala personröster i Helsingborgs kommunval 2018. Kandidatnamnen är gallrade i den historiska presentationen.",
+    "url": "https://historik.val.se/val/val2018/slutresultat/K/kommun/12/83/personroster.html"
+  },
+  "municipality": "Helsingborg",
+  "municipalityCode": "1283",
+  "election": "2018",
+  "electionType": "kommunfullmäktige",
+  "parties": [
+    { "code": "M", "name": "Moderaterna", "partyVotes": 0, "personalVotesTotal": 6294, "candidates": [] },
+    { "code": "C", "name": "Centerpartiet", "partyVotes": 0, "personalVotesTotal": 1041, "candidates": [] },
+    { "code": "L", "name": "Liberalerna", "partyVotes": 0, "personalVotesTotal": 993, "candidates": [] },
+    { "code": "KD", "name": "Kristdemokraterna", "partyVotes": 0, "personalVotesTotal": 813, "candidates": [] },
+    { "code": "S", "name": "Arbetarepartiet-Socialdemokraterna", "partyVotes": 0, "personalVotesTotal": 6707, "candidates": [] },
+    { "code": "V", "name": "Vänsterpartiet", "partyVotes": 0, "personalVotesTotal": 1037, "candidates": [] },
+    { "code": "MP", "name": "Miljöpartiet de gröna", "partyVotes": 0, "personalVotesTotal": 1279, "candidates": [] },
+    { "code": "SD", "name": "Sverigedemokraterna", "partyVotes": 0, "personalVotesTotal": 4706, "candidates": [] },
+    { "code": "FI", "name": "Feministiskt initiativ", "partyVotes": 0, "personalVotesTotal": 108, "candidates": [] },
+    { "code": "TRP", "name": "TRYGGHETSPARTIET", "partyVotes": 0, "personalVotesTotal": 72, "candidates": [] }
+  ]
+}
