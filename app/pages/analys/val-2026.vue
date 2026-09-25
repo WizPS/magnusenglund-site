@@ -138,6 +138,12 @@ useSeoMeta({
         är ett tydligt personligt förtroende som jag tar med mig i det fortsatta arbetet.
       </p>
       <p>
+        Ett varmt grattis till alla mina kollegor som fick väljarnas förtroende i valet, inte minst
+        er som nu får företräda Liberalerna i Helsingborgs kommunfullmäktige och som ersättare.
+        Tack också till alla kandidater och medlemmar som bidrog i valrörelsen. Jag ser fram emot
+        att fortsätta arbeta tillsammans.
+      </p>
+      <p>
         De tjugo kryssen placerar mig på åttonde plats bland Liberalernas kandidater i den här
         sammanställningen. Tillsammans står de för ungefär 2,3 procent av Liberalernas 860
         registrerade personröster i Helsingborg. Kryssen kom från 15 valdistrikt, med flest i
