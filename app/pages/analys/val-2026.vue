@@ -1,116 +1,3 @@
-<script setup lang="ts">
-import electionData from '~/data/val-2026-helsingborg.json'
-import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
-
-type District = {
-  code: string | null
-  name: string
-  votes: number
-}
-
-type Candidate = {
-  number: number | null
-  name: string
-  personalVotes: number
-  districts: District[]
-}
-
-type Party = {
-  code: string
-  name: string
-  partyVotes: number
-  candidates: Candidate[]
-}
-
-type ElectionData = {
-  source: {
-    name: string
-    note: string
-    sheet?: string
-    url?: string
-  }
-  municipality: string
-  municipalityCode: string
-  election: string
-  electionType: string
-  parties: Party[]
-}
-
-const data = ref<ElectionData>(electionData as ElectionData)
-const data2022 = electionData2022 as ElectionData
-const error = ref<Error | null>(null)
-const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
-
-const selectedPartyCode = ref('L')
-const expandedCandidate = ref<string | null>(null)
-const show2022Votes = ref(true)
-
-const selectedParty = computed(() => {
-  const parties = data.value?.parties || []
-  return parties.find((party) => party.code === selectedPartyCode.value) || parties[0]
-})
-
-const selectedParty2022 = computed(() => {
-  return data2022.parties.find((party) => party.code === selectedParty.value?.code)
-})
-
-const totalPersonalVotes2022 = computed(() => {
-  return selectedParty2022.value?.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0) || 0
-})
-
-const candidateVotes2022 = (candidate: Candidate) => {
-  return selectedParty2022.value?.candidates.find((previousCandidate) => previousCandidate.name === candidate.name)?.personalVotes ?? null
-}
-
-const sortedParties = computed(() => {
-  return [...(data.value?.parties || [])].sort((a, b) => {
-    return b.partyVotes - a.partyVotes || a.name.localeCompare(b.name, 'sv')
-  })
-})
-
-const formatNumber = (value: number) => new Intl.NumberFormat('sv-SE').format(value)
-
-const toggleCandidate = (candidate: Candidate) => {
-  const key = `${selectedParty.value?.code}-${candidate.number || candidate.name}`
-  expandedCandidate.value = expandedCandidate.value === key ? null : key
-}
-
-const isExpanded = (candidate: Candidate) => {
-  const key = `${selectedParty.value?.code}-${candidate.number || candidate.name}`
-  return expandedCandidate.value === key
-}
-
-watch(selectedPartyCode, () => {
-  expandedCandidate.value = null
-})
-
-watch(
-  () => data.value?.parties,
-  (parties) => {
-    if (parties?.length && !parties.some((party) => party.code === selectedPartyCode.value)) {
-      selectedPartyCode.value = parties[0].code
-    }
-  },
-  { immediate: true }
-)
-
-useSeoMeta({
-  title: 'Valanalys 2026 | Magnus Englund',
-  description: 'Personligt tack och analys av personröster, Liberalernas valresultat och valdistrikt i Helsingborg 2026.',
-  ogTitle: 'Valanalys 2026 | Magnus Englund',
-  ogDescription: 'Magnus Englunds tack efter valet och en jämförelse mellan Liberalernas riksresultat och resultatet i Helsingborg.',
-  ogImage: shareImage,
-  ogImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista',
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
-  ogType: 'website',
-  ogSiteName: 'Magnus Englund',
-  twitterCard: 'summary_large_image',
-  twitterImage: shareImage,
-  twitterImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista'
-})
-</script>
-
 <template>
   <section class="analysis-page">
     <header class="page-intro">
@@ -226,15 +113,14 @@ useSeoMeta({
             </div>
             <p>Klicka på en kandidats namn för att se antal personröster per valdistrikt. Välj ett annat parti ovan för att utforska dess kandidater.</p>
             <div class="analysis-results-actions">
-              <button
-                type="button"
-                class="comparison-button comparison-button-compact"
-                :class="{ 'comparison-button-active': show2022Votes }"
+              <Button
+                size="small"
+                label="Visa 2022"
+                severity="success"
+                :outlined="!show2022Votes"
                 :aria-pressed="show2022Votes"
                 @click="show2022Votes = !show2022Votes"
-              >
-                Visa 2022
-              </button>
+              />
             </div>
           </div>
         </div>
@@ -355,3 +241,116 @@ useSeoMeta({
     </template>
   </section>
 </template>
+
+<script setup lang="ts">
+import electionData from '~/data/val-2026-helsingborg.json'
+import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
+
+type District = {
+  code: string | null
+  name: string
+  votes: number
+}
+
+type Candidate = {
+  number: number | null
+  name: string
+  personalVotes: number
+  districts: District[]
+}
+
+type Party = {
+  code: string
+  name: string
+  partyVotes: number
+  candidates: Candidate[]
+}
+
+type ElectionData = {
+  source: {
+    name: string
+    note: string
+    sheet?: string
+    url?: string
+  }
+  municipality: string
+  municipalityCode: string
+  election: string
+  electionType: string
+  parties: Party[]
+}
+
+const data = ref<ElectionData>(electionData as ElectionData)
+const data2022 = electionData2022 as ElectionData
+const error = ref<Error | null>(null)
+const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
+
+const selectedPartyCode = ref('L')
+const expandedCandidate = ref<string | null>(null)
+const show2022Votes = ref(true)
+
+const selectedParty = computed(() => {
+  const parties = data.value?.parties || []
+  return parties.find((party) => party.code === selectedPartyCode.value) || parties[0]
+})
+
+const selectedParty2022 = computed(() => {
+  return data2022.parties.find((party) => party.code === selectedParty.value?.code)
+})
+
+const totalPersonalVotes2022 = computed(() => {
+  return selectedParty2022.value?.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0) || 0
+})
+
+const candidateVotes2022 = (candidate: Candidate) => {
+  return selectedParty2022.value?.candidates.find((previousCandidate) => previousCandidate.name === candidate.name)?.personalVotes ?? null
+}
+
+const sortedParties = computed(() => {
+  return [...(data.value?.parties || [])].sort((a, b) => {
+    return b.partyVotes - a.partyVotes || a.name.localeCompare(b.name, 'sv')
+  })
+})
+
+const formatNumber = (value: number) => new Intl.NumberFormat('sv-SE').format(value)
+
+const toggleCandidate = (candidate: Candidate) => {
+  const key = `${selectedParty.value?.code}-${candidate.number || candidate.name}`
+  expandedCandidate.value = expandedCandidate.value === key ? null : key
+}
+
+const isExpanded = (candidate: Candidate) => {
+  const key = `${selectedParty.value?.code}-${candidate.number || candidate.name}`
+  return expandedCandidate.value === key
+}
+
+watch(selectedPartyCode, () => {
+  expandedCandidate.value = null
+})
+
+watch(
+  () => data.value?.parties,
+  (parties) => {
+    if (parties?.length && !parties.some((party) => party.code === selectedPartyCode.value)) {
+      selectedPartyCode.value = parties[0].code
+    }
+  },
+  { immediate: true }
+)
+
+useSeoMeta({
+  title: 'Valanalys 2026 | Magnus Englund',
+  description: 'Personligt tack och analys av personröster, Liberalernas valresultat och valdistrikt i Helsingborg 2026.',
+  ogTitle: 'Valanalys 2026 | Magnus Englund',
+  ogDescription: 'Magnus Englunds tack efter valet och en jämförelse mellan Liberalernas riksresultat och resultatet i Helsingborg.',
+  ogImage: shareImage,
+  ogImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogType: 'website',
+  ogSiteName: 'Magnus Englund',
+  twitterCard: 'summary_large_image',
+  twitterImage: shareImage,
+  twitterImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista'
+})
+</script>
