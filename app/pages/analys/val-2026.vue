@@ -80,9 +80,9 @@ watch(
 
 useSeoMeta({
   title: 'Valanalys 2026 | Magnus Englund',
-  description: 'Analys av personröster och valdistrikt i Helsingborgs kommunval 2026.',
+  description: 'Personligt tack och analys av personröster, Liberalernas valresultat och valdistrikt i Helsingborg 2026.',
   ogTitle: 'Valanalys 2026 | Magnus Englund',
-  ogDescription: 'Personröster och valdistriktsdata för Helsingborgs kommunval 2026.',
+  ogDescription: 'Magnus Englunds tack efter valet och en jämförelse mellan Liberalernas riksresultat och resultatet i Helsingborg.',
   ogImage: shareImage,
   ogImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista',
   ogImageWidth: 1200,
@@ -115,6 +115,61 @@ useSeoMeta({
         fetchpriority="high"
       >
     </figure>
+
+    <section class="analysis-reflection" aria-labelledby="reflection-heading">
+      <p class="eyebrow">Efter valet</p>
+      <h2 id="reflection-heading">Tack för de tjugo kryssen</h2>
+      <p>
+        Jag vill passa på att säga ett varmt tack till alla tjugo personer som valde att sätta
+        ett personkryss vid mitt namn i kommunvalet i Helsingborg. I valet 2022 fick jag sju kryss.
+        Att nu få tjugo är tretton fler personliga förtroenden – nästan tre gånger så många.
+      </p>
+      <p>
+        Jag vet inte vilka alla ni tjugo är, men jag hoppas att ni känner att ert förtroende har
+        tagits på allvar. För mig är varje kryss en människa som har läst, lyssnat, pratat med mig
+        eller på annat sätt tyckt att jag borde få möjlighet att bidra. Det är jag både stolt över
+        och tacksam för.
+      </p>
+      <p>
+        De tjugo kryssen placerar mig på åttonde plats bland Liberalernas kandidater i den här
+        sammanställningen. Tillsammans står de för ungefär 2,3 procent av Liberalernas 860
+        registrerade personröster i Helsingborg. Kryssen kom från 15 valdistrikt, med flest i
+        Tågaborg C och därefter flera distrikt där stödet var utspritt över staden.
+      </p>
+    </section>
+
+    <section class="analysis-reflection analysis-results-context" aria-labelledby="context-heading">
+      <p class="eyebrow">Valet i två perspektiv</p>
+      <h2 id="context-heading">Ett starkare riksresultat än lokalt</h2>
+      <p>
+        På riksnivå fick Liberalerna 5,34 procent och 19 mandat. Det innebär att partiet klarade
+        riksdagsspärren och fortsätter att vara representerat i riksdagen.
+      </p>
+      <p>
+        Lokalt i Helsingborg blev resultatet 3,5 procent och två mandat i kommunfullmäktige. I
+        kommunvalet 2022 fick Liberalerna 5,06 procent och tre mandat. Lokalt blev det alltså ett
+        tapp både i röstandel och ett förlorat mandat, även om mina egna personröster samtidigt
+        ökade tydligt.
+      </p>
+      <p>
+        I riksdagsvalet i Helsingborg fick Liberalerna 5,29 procent, vilket ligger nära partiets
+        rikssiffra. Skillnaden mellan riksdagsvalet och kommunvalet visar att väljarnas bedömning
+        kan se olika ut beroende på nivå: lokalt påverkas resultatet också av kandidater,
+        organisation, synlighet och förtroende i den egna kommunen.
+      </p>
+      <p>
+        Min egen slutsats är därför dubbel. För Liberalerna finns en nationell grund att bygga
+        vidare på, men i Helsingborg krävs ett långsiktigt arbete för att återvinna bredden. För
+        mig personligen visar de tjugo kryssen att det lokala förtroendet växer – och att det är
+        värt att fortsätta ta ansvar, vara synlig och göra liberal politik konkret i vardagen.
+      </p>
+      <p class="analysis-source">
+        Nationellt resultat: <a href="https://www.val.se/valresultat-och-statistik/riksdags--region--och-kommunval/valresultat-2026" target="_blank" rel="noopener noreferrer">Valmyndighetens slutliga valresultat 2026</a>.
+        Lokalt mandatresultat: <a href="https://helsingborg.se/kommun-och-politik/kommunens-organisation/" target="_blank" rel="noopener noreferrer">Helsingborgs stads sammanställning</a>.
+        Helsingborgs riksdagsresultat: <a href="https://valresultat.svt.se/2026/riksdagsval-1283-helsingborg.html" target="_blank" rel="noopener noreferrer">SVT:s resultatpresentation</a>.
+        Personrösterna nedan är bearbetade från Valmyndighetens slutliga rösträkning.
+      </p>
+    </section>
 
     <p v-if="error" class="analysis-error">
       Valanalysen kunde inte läsas in just nu.
