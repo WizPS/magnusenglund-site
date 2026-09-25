@@ -4,8 +4,25 @@ import { randomUUID } from 'node:crypto'
 
 const tableName = process.env.COMMENTS_TABLE_NAME || 'SiteComments'
 const environment = (process.env.COMMENTS_ENVIRONMENT || (process.env.WEBSITE_SITE_NAME ? 'prod' : 'dev')).trim().toLowerCase()
-const partitionKey = `${environment}-val-2026`
 let tableClient
+
+function normalizePagePath(value) {
+  if (typeof value !== 'string' || !value.trim()) return '/'
+
+  const pagePath = value.trim().split('?')[0].split('#')[0]
+  if (!pagePath.startsWith('/') || pagePath.length > 200) return null
+  return pagePath || '/'
+}
+
+function partitionForPage(pagePath) {
+  // Preserve the first page's existing production partition while adding page-specific partitions.
+  const pageKey = pagePath === '/analys/val-2026'
+    ? 'val-2026'
+    : pagePath === '/'
+      ? 'home'
+      : pagePath.replace(/^\/+|\/+$/g, '').replace(/[^a-zA-Z0-9-]+/g, '-').slice(0, 80) || 'home'
+  return `${environment}-${pageKey}`
+}
 
 function getTableClient() {
   if (tableClient) return tableClient
@@ -45,6 +62,9 @@ app.http('comments', {
       await ensureTable(client)
 
       if (request.method === 'GET') {
+        const pagePath = normalizePagePath(new URL(request.url).searchParams.get('page'))
+        if (!pagePath) return response({ error: 'Ogiltig sida.' }, 400)
+        const partitionKey = partitionForPage(pagePath)
         const comments = []
         const entities = client.listEntities({
           queryOptions: { filter: `PartitionKey eq '${partitionKey}'` }
@@ -55,7 +75,8 @@ app.http('comments', {
             id: entity.rowKey,
             name: entity.name,
             text: entity.text,
-            createdAt: entity.createdAt
+            createdAt: entity.createdAt,
+            pagePath: entity.pagePath
           })
         }
 
@@ -66,21 +87,23 @@ app.http('comments', {
       const body = await request.json()
       const name = typeof body?.name === 'string' ? body.name.trim() : ''
       const text = typeof body?.text === 'string' ? body.text.trim() : ''
+      const pagePath = normalizePagePath(body?.page)
 
-      if (!name || name.length > 80 || !text || text.length > 2000) {
-        return response({ error: 'Ange namn och en kommentar på högst 2 000 tecken.' }, 400)
+      if (!name || name.length > 80 || !text || text.length > 2000 || !pagePath) {
+        return response({ error: 'Ange en giltig sida, namn och en kommentar på högst 2 000 tecken.' }, 400)
       }
 
       const createdAt = new Date().toISOString()
       await client.createEntity({
-        partitionKey,
+        partitionKey: partitionForPage(pagePath),
         rowKey: `${Date.now()}-${randomUUID()}`,
         name,
         text,
-        createdAt
+        createdAt,
+        pagePath
       })
 
-      return response({ ok: true, comment: { name, text, createdAt } }, 201)
+      return response({ ok: true, comment: { name, text, createdAt, pagePath } }, 201)
     } catch (error) {
       context.error('Comment API failed', error)
       return response({ error: 'Kommentarerna är tillfälligt otillgängliga.' }, 503)

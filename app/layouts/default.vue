@@ -16,6 +16,7 @@
 
     <main class="container site-main">
       <slot />
+      <CommentsSection />
     </main>
 
     <footer class="site-footer">
