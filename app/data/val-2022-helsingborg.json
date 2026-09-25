@@ -1,0 +1,6083 @@
+{
+  "source": {
+    "name": "roster-per-distrikt-slutligt-antal-roster-inklusive-totalt-valdeltagande-kommunval-2022 (1).xlsx",
+    "sheet": "roster_KF",
+    "note": "Bearbetad från Valmyndighetens slutliga röster per valdistrikt i kommunvalet 2022."
+  },
+  "municipality": "Helsingborg",
+  "municipalityCode": "1283",
+  "election": "2022",
+  "electionType": "KF",
+  "parties": [
+    {
+      "code": "S",
+      "name": "Arbetarepartiet-Socialdemokraterna",
+      "sourceName": "Arbetarepartiet-Socialdemokraterna",
+      "partyVotes": 27591,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 425
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 415
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 414
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 412
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 409
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 384
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 380
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 374
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 372
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 365
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 361
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 357
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 357
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 355
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 351
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 350
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 344
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 344
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 344
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 343
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 342
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 339
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 330
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 327
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 327
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 326
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 321
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 320
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 319
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 316
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 315
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 313
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 313
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 311
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 311
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 310
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 310
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 309
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 309
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 308
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 308
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 308
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 306
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 302
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 301
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 301
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 299
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 298
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 297
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 295
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 293
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 291
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 291
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 288
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 287
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 286
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 284
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 283
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 282
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 282
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 278
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 277
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 275
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 271
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 267
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 266
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 266
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 264
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 262
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 258
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 257
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 257
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 257
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 255
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 254
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 248
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 244
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 244
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 243
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 237
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 236
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 231
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 228
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 227
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 220
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 205
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 200
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 196
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 195
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 184
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 174
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 142
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 135
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 124
+        }
+      ]
+    },
+    {
+      "code": "M",
+      "name": "Moderaterna",
+      "sourceName": "Moderaterna",
+      "partyVotes": 20943,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 518
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 500
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 499
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 455
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 434
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 420
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 392
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 380
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 374
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 364
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 363
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 359
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 359
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 356
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 338
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 336
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 326
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 323
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 321
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 321
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 321
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 315
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 312
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 311
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 310
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 306
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 303
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 303
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 302
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 298
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 295
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 292
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 288
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 287
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 284
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 282
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 266
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 250
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 249
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 247
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 245
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 239
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 238
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 235
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 229
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 228
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 226
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 223
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 222
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 220
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 211
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 209
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 207
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 193
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 183
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 180
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 176
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 173
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 171
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 170
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 148
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 144
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 141
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 137
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 125
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 120
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 119
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 116
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 115
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 113
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 113
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 109
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 108
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 103
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 103
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 101
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 95
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 95
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 91
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 89
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 89
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 86
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 75
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 74
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 73
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 70
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 69
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 68
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 64
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 61
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 56
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 50
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 34
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Sverigedemokraterna",
+      "sourceName": "Sverigedemokraterna",
+      "partyVotes": 18985,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 409
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 355
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 348
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 331
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 325
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 320
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 314
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 309
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 286
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 270
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 267
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 257
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 255
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 254
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 253
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 251
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 246
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 246
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 244
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 237
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 235
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 235
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 233
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 233
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 232
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 232
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 228
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 225
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 223
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 222
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 222
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 221
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 220
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 220
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 218
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 218
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 216
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 215
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 211
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 211
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 210
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 208
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 207
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 206
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 203
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 201
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 200
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 198
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 197
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 197
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 196
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 194
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 192
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 190
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 190
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 188
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 184
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 183
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 182
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 180
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 180
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 179
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 177
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 177
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 175
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 174
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 172
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 172
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 166
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 165
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 165
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 164
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 160
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 159
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 158
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 158
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 157
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 151
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 143
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 142
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 141
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 130
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 128
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 126
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 123
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 116
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 115
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 107
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 107
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 105
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 105
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 84
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 81
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 70
+        }
+      ]
+    },
+    {
+      "code": "V",
+      "name": "Vänsterpartiet",
+      "sourceName": "Vänsterpartiet",
+      "partyVotes": 4799,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 111
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 107
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 103
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 102
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 102
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 100
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 93
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 91
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 91
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 88
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 86
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 79
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 77
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 76
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 74
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 72
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 70
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 69
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 68
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 67
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 67
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 67
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 66
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 65
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 65
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 63
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 63
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 63
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 61
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 60
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 59
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 59
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 58
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 57
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 57
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 57
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 57
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 56
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 53
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 53
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 53
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 50
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 48
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 40
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 38
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 35
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 35
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 35
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 35
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 35
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 33
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 32
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 32
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 28
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 27
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 25
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 25
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 24
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 22
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 21
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 18
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 16
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 16
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 16
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 12
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 12
+        }
+      ]
+    },
+    {
+      "code": "L",
+      "name": "Liberalerna",
+      "sourceName": "Liberalerna (tidigare Folkpartiet)",
+      "partyVotes": 4473,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 140
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 135
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 132
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 123
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 118
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 107
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 101
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 99
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 97
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 97
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 96
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 96
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 95
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 88
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 84
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 83
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 83
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 82
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 80
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 80
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 77
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 77
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 74
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 73
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 71
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 71
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 71
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 68
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 67
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 64
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 62
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 62
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 61
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 55
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 53
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 50
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 48
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 46
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 35
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 32
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 32
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 32
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 28
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 27
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 27
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 24
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 24
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 22
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 21
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 19
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 17
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 14
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 14
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 14
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 14
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 12
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 11
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 10
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 10
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 10
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 10
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 9
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 5
+        }
+      ]
+    },
+    {
+      "code": "KD",
+      "name": "Kristdemokraterna",
+      "sourceName": "Kristdemokraterna",
+      "partyVotes": 3672,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 70
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 70
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 67
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 65
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 65
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 62
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 62
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 61
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 61
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 60
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 59
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 59
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 58
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 58
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 57
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 57
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 55
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 53
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 50
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 48
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 48
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 45
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 45
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 44
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 42
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 42
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 42
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 42
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 42
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 41
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 37
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 37
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 35
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 35
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 35
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 34
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 33
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 33
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 33
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 33
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 32
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 29
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 28
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 26
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 21
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 19
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 16
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 16
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 16
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 14
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 14
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 12
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 12
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 10
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 10
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Centerpartiet",
+      "sourceName": "Centerpartiet",
+      "partyVotes": 3411,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 88
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 82
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 76
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 75
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 72
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 70
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 65
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 62
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 59
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 56
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 54
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 53
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 51
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 49
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 49
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 48
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 46
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 46
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 45
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 45
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 45
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 43
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 43
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 41
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 39
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 37
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 35
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 35
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 28
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 28
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 26
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 26
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 26
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 26
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 25
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 24
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 24
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 21
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 21
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 20
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 18
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 18
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 16
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 15
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 14
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 11
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 11
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 11
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 7
+        }
+      ]
+    },
+    {
+      "code": "MP",
+      "name": "Miljöpartiet de gröna",
+      "sourceName": "Miljöpartiet de gröna",
+      "partyVotes": 2796,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 61
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 58
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 58
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 57
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 55
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 54
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 52
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 49
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 49
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 49
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 46
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 45
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 44
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 43
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 42
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 42
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 41
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 40
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 38
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 38
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 38
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 38
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 37
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 37
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 34
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 33
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 33
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 30
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 28
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 28
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 27
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 27
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 26
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 26
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 22
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 22
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 21
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 21
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 21
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 20
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 20
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 19
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 19
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 18
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 18
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 18
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 17
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 16
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 16
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 16
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 16
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 15
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 13
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 12
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 10
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 8
+        }
+      ]
+    },
+    {
+      "code": "NYANS",
+      "name": "Partiet Nyans",
+      "sourceName": "Partiet Nyans",
+      "partyVotes": 959,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 47
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 41
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 37
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 36
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 36
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 34
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 33
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 33
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 33
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 31
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 29
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 25
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 25
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 23
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 22
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 21
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 19
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 18
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 15
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 15
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 13
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 13
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 13
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 11
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 11
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 11
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 11
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 10
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 10
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 10
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 9
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 9
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 8
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 5
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "MED",
+      "name": "Medborgerlig Samling",
+      "sourceName": "Medborgerlig Samling",
+      "partyVotes": 325,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 12
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 10
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 9
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 9
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 9
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 6
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 6
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830218",
+          "name": "Gustavslund Ö",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 5
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 4
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 3
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830314",
+          "name": "Ättekulla Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "ALTERNATIV-F-R-SVERIGE",
+      "name": "Alternativ för Sverige",
+      "sourceName": "Alternativ för Sverige",
+      "partyVotes": 271,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 9
+        },
+        {
+          "code": "12831706",
+          "name": "Dalhem S",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 8
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 7
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 6
+        },
+        {
+          "code": "12830116",
+          "name": "Berga",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830304",
+          "name": "Lussebäcken",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830122",
+          "name": "Margaretaplatsen",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 5
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 5
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 4
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830902",
+          "name": "Påarp Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 4
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 4
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 4
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830602",
+          "name": "Hittarp-Domsten",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830603",
+          "name": "Laröd V",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 3
+        },
+        {
+          "code": "12831605",
+          "name": "Rydebäck Ö",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830110",
+          "name": "St Jörgens plats",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831202",
+          "name": "Mörarp Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830108",
+          "name": "Tågaborg Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830311",
+          "name": "Ättekulla N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831703",
+          "name": "Drottninghög Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831709",
+          "name": "Fredriksdal Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "FI",
+      "name": "Feministiskt initiativ",
+      "sourceName": "Feministiskt initiativ",
+      "partyVotes": 57,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831603",
+          "name": "Gantofta",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831704",
+          "name": "Drottninghög V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830204",
+          "name": "Eneborg V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830201",
+          "name": "Furutorp",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830224",
+          "name": "Gustavslund V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830124",
+          "name": "Mariastaden S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830101",
+          "name": "Olympia",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830113",
+          "name": "Pålsjöbaden",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830217",
+          "name": "Västergård N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830205",
+          "name": "Wilson park",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830702",
+          "name": "Ödåkra Ö",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "MITT-SVERIGE",
+      "name": "MITT SVERIGE",
+      "sourceName": "MITT SVERIGE",
+      "partyVotes": 43,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 7
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 5
+        },
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 5
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 4
+        },
+        {
+          "code": "12831701",
+          "name": "Fredriksdal V",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830212",
+          "name": "Adolfsberg-Västergård S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830223",
+          "name": "Rosengården C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "MOD",
+      "name": "MoD",
+      "sourceName": "MoD",
+      "partyVotes": 31,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830102",
+          "name": "Centrum S",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830310",
+          "name": "Humlegården",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830119",
+          "name": "Mariastaden Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830221",
+          "name": "Oceanhamnen",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830118",
+          "name": "Mariastaden V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830305",
+          "name": "Planteringen S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830215",
+          "name": "Rosengården Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831602",
+          "name": "Rydebäck S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830121",
+          "name": "Tågaborg C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830112",
+          "name": "Tågaborg N",
+          "partyVotes": 1
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830704",
+          "name": "Ödåkra V",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "PIRATPARTIET",
+      "name": "Piratpartiet",
+      "sourceName": "Piratpartiet",
+      "partyVotes": 31,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830222",
+          "name": "Eneborg Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830901",
+          "name": "Påarp V",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830105",
+          "name": "Slottshöjden N",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830208",
+          "name": "Viskängen",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830703",
+          "name": "Björka-Väla",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831707",
+          "name": "Brohult",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830103",
+          "name": "Centrum V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830206",
+          "name": "Eneborg M",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831702",
+          "name": "Fredriksdal M",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830306",
+          "name": "Planteringen N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830211",
+          "name": "Ragnvalla",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830309",
+          "name": "Ramlösa N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830313",
+          "name": "Ramlösa Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830308",
+          "name": "Ramlösabrunn",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830302",
+          "name": "Råå N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830104",
+          "name": "Slottshöjden S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830213",
+          "name": "Sofieberg",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830219",
+          "name": "Söder",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830701",
+          "name": "Ödåkra N",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "KNAPPTRYCKARNA",
+      "name": "Knapptryckarna",
+      "sourceName": "Knapptryckarna",
+      "partyVotes": 15,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830107",
+          "name": "Centrum Ö",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830210",
+          "name": "Eskilsminne",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 2
+        },
+        {
+          "code": "12831302",
+          "name": "Bårslöv V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830207",
+          "name": "Högaborg Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830501",
+          "name": "Kattarp",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830120",
+          "name": "Ringstorp Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830301",
+          "name": "Råå S",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830401",
+          "name": "Välinge",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "DIREKTDEMOKRATERNA",
+      "name": "Direktdemokraterna",
+      "sourceName": "Direktdemokraterna",
+      "partyVotes": 11,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830312",
+          "name": "Raus S",
+          "partyVotes": 3
+        },
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 2
+        },
+        {
+          "code": "12830307",
+          "name": "Elineberg",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830220",
+          "name": "Gustav Adolf",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831708",
+          "name": "Lundsbäck",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 1
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "ENHET",
+      "name": "Enhet",
+      "sourceName": "Enhet",
+      "partyVotes": 11,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830303",
+          "name": "Högasten",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830604",
+          "name": "Laröd Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830117",
+          "name": "Mariastaden N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830123",
+          "name": "Ringstorp N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830216",
+          "name": "Rosengården V",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831606",
+          "name": "Rydebäck M",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831601",
+          "name": "Rydebäck N",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830202",
+          "name": "Stadsparken",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830106",
+          "name": "Stattena",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830109",
+          "name": "Tågaborg S",
+          "partyVotes": 1
+        },
+        {
+          "code": "128300",
+          "name": "Uppsamlingsdistrikt",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "KRISTNA-V-RDEPARTIET",
+      "name": "Kristna Värdepartiet",
+      "sourceName": "Kristna Värdepartiet",
+      "partyVotes": 4,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12831301",
+          "name": "Bårslöv Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831705",
+          "name": "Dalhem-Källstorp",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830209",
+          "name": "Närlunda",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830111",
+          "name": "Tågaborg M",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "KALLE-ANKAPARTIET",
+      "name": "Kalle ankapartiet",
+      "sourceName": "Kalle ankapartiet",
+      "partyVotes": 3,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830601",
+          "name": "Allerum",
+          "partyVotes": 1
+        },
+        {
+          "code": "12830114",
+          "name": "Pålsjö Ö",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "LANDSBYGDSPARTIET-OBEROENDE",
+      "name": "Landsbygdspartiet Oberoende",
+      "sourceName": "Landsbygdspartiet Oberoende",
+      "partyVotes": 2,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12831201",
+          "name": "Mörarp V",
+          "partyVotes": 2
+        }
+      ]
+    },
+    {
+      "code": "VOLT-SVERIGE",
+      "name": "Volt Sverige",
+      "sourceName": "Volt Sverige",
+      "partyVotes": 2,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830115",
+          "name": "Ringstorp C",
+          "partyVotes": 1
+        },
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "BASINKOMSTPARTIET",
+      "name": "Basinkomstpartiet",
+      "sourceName": "Basinkomstpartiet",
+      "partyVotes": 1,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12831604",
+          "name": "Vallåkra-Ottarp",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "K-RLEK",
+      "name": "Kärlek",
+      "sourceName": "Kärlek",
+      "partyVotes": 1,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830203",
+          "name": "Högaborg V",
+          "partyVotes": 1
+        }
+      ]
+    },
+    {
+      "code": "SKP",
+      "name": "SKP",
+      "sourceName": "SKP",
+      "partyVotes": 1,
+      "candidates": [],
+      "districts": [
+        {
+          "code": "12830214",
+          "name": "Husensjö",
+          "partyVotes": 1
+        }
+      ]
+    }
+  ]
+}

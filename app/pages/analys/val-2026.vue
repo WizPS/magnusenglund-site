@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import electionData from '~/data/val-2026-helsingborg.json'
+import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
 
 type District = {
   code: string | null
@@ -24,8 +25,9 @@ type Party = {
 type ElectionData = {
   source: {
     name: string
-    sheet: string
     note: string
+    sheet?: string
+    url?: string
   }
   municipality: string
   municipalityCode: string
@@ -35,16 +37,30 @@ type ElectionData = {
 }
 
 const data = ref<ElectionData>(electionData as ElectionData)
+const data2022 = electionData2022 as ElectionData
 const error = ref<Error | null>(null)
 const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
 
 const selectedPartyCode = ref('L')
 const expandedCandidate = ref<string | null>(null)
+const show2022Votes = ref(true)
 
 const selectedParty = computed(() => {
   const parties = data.value?.parties || []
   return parties.find((party) => party.code === selectedPartyCode.value) || parties[0]
 })
+
+const selectedParty2022 = computed(() => {
+  return data2022.parties.find((party) => party.code === selectedParty.value?.code)
+})
+
+const totalPersonalVotes2022 = computed(() => {
+  return selectedParty2022.value?.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0) || 0
+})
+
+const candidateVotes2022 = (candidate: Candidate) => {
+  return selectedParty2022.value?.candidates.find((previousCandidate) => previousCandidate.name === candidate.name)?.personalVotes ?? null
+}
 
 const sortedParties = computed(() => {
   return [...(data.value?.parties || [])].sort((a, b) => {
@@ -203,7 +219,21 @@ useSeoMeta({
             <h2 id="candidate-heading">Personröster</h2>
             <p>Klicka på en kandidats namn för att se antal personröster per valdistrikt. Välj ett annat parti ovan för att utforska dess kandidater.</p>
           </div>
-          <span class="analysis-total">{{ formatNumber(selectedParty.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0)) }} totalt</span>
+          <div class="analysis-results-actions">
+            <span class="analysis-total">
+              {{ formatNumber(selectedParty.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0)) }} totalt
+              <template v-if="show2022Votes && selectedParty2022"> · 2022: {{ formatNumber(totalPersonalVotes2022) }}</template>
+            </span>
+            <button
+              type="button"
+              class="comparison-button comparison-button-compact"
+              :class="{ 'comparison-button-active': show2022Votes }"
+              :aria-pressed="show2022Votes"
+              @click="show2022Votes = !show2022Votes"
+            >
+              Visa 2022
+            </button>
+          </div>
         </div>
 
         <div class="candidate-list">
@@ -220,9 +250,15 @@ useSeoMeta({
               @click="toggleCandidate(candidate)"
             >
               <span class="candidate-name">{{ candidate.name }}</span>
-              <span class="candidate-votes">
-                {{ formatNumber(candidate.personalVotes) }}
-                <span>personröster</span>
+              <span class="candidate-votes candidate-votes-comparison">
+                <template v-if="show2022Votes">
+                  {{ candidateVotes2022(candidate) === null ? '–' : formatNumber(candidateVotes2022(candidate) || 0) }}
+                  →
+                  {{ formatNumber(candidate.personalVotes) }} personröster
+                </template>
+                <template v-else>
+                  {{ formatNumber(candidate.personalVotes) }} personröster
+                </template>
               </span>
             </button>
 

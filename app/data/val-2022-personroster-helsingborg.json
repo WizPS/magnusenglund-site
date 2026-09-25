@@ -1,0 +1,2055 @@
+{
+  "source": {
+    "name": "protokoll_Val_20220911_1283_KF.pdf",
+    "note": "Kandidatpersonröster från Länsstyrelsen Skånes slutliga valprotokoll för Helsingborgs kommunval 2022.",
+    "url": "https://resultat.val.se/protokoll/protokoll_Val_20220911_1283_KF.pdf"
+  },
+  "municipality": "Helsingborg",
+  "municipalityCode": "1283",
+  "election": "2022",
+  "electionType": "KF",
+  "parties": [
+    {
+      "code": "M",
+      "name": "Moderaterna",
+      "sourceName": "Moderaterna",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Christian Orsing",
+          "personalVotes": 1979,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Anna Jähnke",
+          "personalVotes": 333,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Mats Sander",
+          "personalVotes": 327,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Mathilda Hjelm",
+          "personalVotes": 104,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Alexander Svensson",
+          "personalVotes": 94,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Lena Bjerne",
+          "personalVotes": 25,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Richard Lundberg",
+          "personalVotes": 143,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Matilda Malmgren",
+          "personalVotes": 96,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Felizia Kino",
+          "personalVotes": 120,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Björn Eisner",
+          "personalVotes": 31,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Ann-Charlotte Svärd",
+          "personalVotes": 51,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Johan Rausgård",
+          "personalVotes": 65,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Beth Lundstedt Holmkvist",
+          "personalVotes": 25,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Kristian Anderson",
+          "personalVotes": 50,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Marie Weibull Kornias",
+          "personalVotes": 23,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Hans Bosson",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Suzana Axeheim",
+          "personalVotes": 96,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Samuel Lilja",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Nini Hansen",
+          "personalVotes": 35,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Peter Knutsson",
+          "personalVotes": 27,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Anders Cato",
+          "personalVotes": 80,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Nannah Hallberg",
+          "personalVotes": 80,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Ellinor Wiksten",
+          "personalVotes": 71,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Nihad Sarajlic",
+          "personalVotes": 66,
+          "districts": []
+        },
+        {
+          "number": 25,
+          "name": "Lars Engert",
+          "personalVotes": 12,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Joakim Andersson",
+          "personalVotes": 13,
+          "districts": []
+        },
+        {
+          "number": 27,
+          "name": "Petronella Möller",
+          "personalVotes": 38,
+          "districts": []
+        },
+        {
+          "number": 28,
+          "name": "Patrik Bellner",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 29,
+          "name": "Torbjörn Rosdahl",
+          "personalVotes": 8,
+          "districts": []
+        },
+        {
+          "number": 30,
+          "name": "Martin Brolin",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 31,
+          "name": "Joachim Axelson",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 32,
+          "name": "Maria Zander",
+          "personalVotes": 18,
+          "districts": []
+        },
+        {
+          "number": 33,
+          "name": "Robin Landin",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 34,
+          "name": "Johan Aftonstråle",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 35,
+          "name": "Marcus Nilsson",
+          "personalVotes": 57,
+          "districts": []
+        },
+        {
+          "number": 37,
+          "name": "Marie Artman",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 38,
+          "name": "Christopher Rosberg",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 39,
+          "name": "Norbert Urac",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 40,
+          "name": "Jonathan Dahlqvist",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 41,
+          "name": "Lis Vipperman",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 42,
+          "name": "Kajsa-Britt Thorsell",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 43,
+          "name": "James Klingborg",
+          "personalVotes": 30,
+          "districts": []
+        },
+        {
+          "number": 44,
+          "name": "Kristina Filipson Jonsson",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 45,
+          "name": "Bo Hansson",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 46,
+          "name": "Nikola Sarjanovic",
+          "personalVotes": 21,
+          "districts": []
+        },
+        {
+          "number": 47,
+          "name": "Åsa Larsson",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 48,
+          "name": "Leopold Axeheim",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 49,
+          "name": "Kent Davidsson",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 50,
+          "name": "Ermin Todorovac",
+          "personalVotes": 24,
+          "districts": []
+        },
+        {
+          "number": 51,
+          "name": "Göran Magnusson",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 52,
+          "name": "Loren Sarajlic",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 53,
+          "name": "Jakob Bergman",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 54,
+          "name": "Peter Pau",
+          "personalVotes": 3,
+          "districts": []
+        },
+        {
+          "number": 55,
+          "name": "Henrik Loveby",
+          "personalVotes": 8,
+          "districts": []
+        },
+        {
+          "number": 56,
+          "name": "Pontus Albertsson",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 57,
+          "name": "Christer Pongratz",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 58,
+          "name": "Marcus Gustafsson",
+          "personalVotes": 13,
+          "districts": []
+        },
+        {
+          "number": 59,
+          "name": "Daniel Milojevic",
+          "personalVotes": 25,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Centerpartiet",
+      "sourceName": "Centerpartiet",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Peter Jansson",
+          "personalVotes": 123,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Monica Andersson",
+          "personalVotes": 73,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Johan Vesterlund",
+          "personalVotes": 67,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Sara Johnson",
+          "personalVotes": 110,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Eva Holm",
+          "personalVotes": 47,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Emma Järund",
+          "personalVotes": 55,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Christoffer Larsson",
+          "personalVotes": 24,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Tommy Grundström",
+          "personalVotes": 12,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Monica Eliasson",
+          "personalVotes": 17,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Jonny Cato",
+          "personalVotes": 47,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Linus Hannedahl",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Millis Block",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Patrik Christierson",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Peter Sääw",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Ian Karlemark",
+          "personalVotes": 24,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Karsten Deppert",
+          "personalVotes": 43,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Jamila El-Hallah",
+          "personalVotes": 44,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Joakim Bogdanoff",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Nathalie Blixt",
+          "personalVotes": 41,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Torbjörn Raimosson",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Ragnar Andersson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Bengt-Arne Andersson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Isabella Rundkvist",
+          "personalVotes": 12,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Arvid Straube",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 25,
+          "name": "Christel Hoch-Hansson",
+          "personalVotes": 3,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Andreas Lindberg",
+          "personalVotes": 6,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "L",
+      "name": "Liberalerna",
+      "sourceName": "Liberalerna (tidigare Folkpartiet)",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Hans Nelson",
+          "personalVotes": 416,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Christina Palmkvist Wester",
+          "personalVotes": 33,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Amir Jawad",
+          "personalVotes": 119,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Dubravka Trejling Nikolic",
+          "personalVotes": 101,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Mats Werne",
+          "personalVotes": 47,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Emilia Kulevska",
+          "personalVotes": 45,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Guy Rambech",
+          "personalVotes": 20,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Maria Wessman",
+          "personalVotes": 60,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Rikard Lind",
+          "personalVotes": 22,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Sylvia Sörliden",
+          "personalVotes": 22,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Krister Azelius",
+          "personalVotes": 59,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Frida Magdalena Olsson",
+          "personalVotes": 18,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Lennart Perborg",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Afrodita Alagic",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Christer Sörliden",
+          "personalVotes": 23,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Sigrid Ekdal",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Per Johansson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Marie Jansson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Kennet Karlsson",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Bo Lennselius",
+          "personalVotes": 8,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Magnus Franzén",
+          "personalVotes": 3,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Mats Nilsson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Mårten Wennerholm",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Nils Hellman",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 25,
+          "name": "Magnus Englund",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Mia Kristiansson",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 27,
+          "name": "Magnus Grill",
+          "personalVotes": 3,
+          "districts": []
+        },
+        {
+          "number": 28,
+          "name": "Catharina Wenehed",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 29,
+          "name": "Anders Willman",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 30,
+          "name": "Cathrin Cronqvist",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 31,
+          "name": "Gustaf Andersson",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 32,
+          "name": "Kristina Gelin",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 33,
+          "name": "Mats Kullenberg",
+          "personalVotes": 30,
+          "districts": []
+        },
+        {
+          "number": 34,
+          "name": "Karin Markenholm",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 35,
+          "name": "Christer Boström",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 36,
+          "name": "Gunilla Westergren Johanson",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 37,
+          "name": "Sven Wennhall",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 38,
+          "name": "Catarina Romedahl",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 39,
+          "name": "Jan Erik Johanson",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 41,
+          "name": "Charlotte Swanstein",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 42,
+          "name": "Johan Sjöholm",
+          "personalVotes": 1,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "KD",
+      "name": "Kristdemokraterna",
+      "sourceName": "Kristdemokraterna",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Lars Thunberg",
+          "personalVotes": 213,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Alexander Kolind",
+          "personalVotes": 62,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Cecilia Bengtsson",
+          "personalVotes": 31,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Josefine Brandin",
+          "personalVotes": 78,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Anne-Margret Norberg",
+          "personalVotes": 45,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Rickard Horgby",
+          "personalVotes": 35,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Cecilia Engström",
+          "personalVotes": 56,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Per-Ola Gunnarsson",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Birgitta Södertun",
+          "personalVotes": 56,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Karin Jensen",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Henrik Thott",
+          "personalVotes": 12,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Aline Leal De Camargo Olsson",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Ola Andreasson",
+          "personalVotes": 8,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Simon Nilsson",
+          "personalVotes": 14,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Anders Lundström",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Carl Möller",
+          "personalVotes": 13,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Margareta Hamark",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Martin Kullberg",
+          "personalVotes": 28,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Kenneth Lantz",
+          "personalVotes": 12,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Eva Zander",
+          "personalVotes": 20,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Anthony Thörn",
+          "personalVotes": 13,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Kenneth Pettersson",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Lisa Björkelund",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 25,
+          "name": "Michael Magnesten",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Michael Vollan",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 27,
+          "name": "Christian Wihlsin",
+          "personalVotes": 4,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "S",
+      "name": "Arbetarepartiet-Socialdemokraterna",
+      "sourceName": "Arbetarepartiet-Socialdemokraterna",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Jan Björklund",
+          "personalVotes": 1511,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Maria Ward",
+          "personalVotes": 555,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Mikael Andersson",
+          "personalVotes": 159,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Margareta Liljedahl Eriksson",
+          "personalVotes": 155,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Mickey Magnusson",
+          "personalVotes": 252,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "My Rosell",
+          "personalVotes": 260,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Ali Shibl",
+          "personalVotes": 287,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Åsa Holmqvist",
+          "personalVotes": 93,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Khaled El Khalayli",
+          "personalVotes": 635,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Christel Håkansson",
+          "personalVotes": 94,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Mats Rosdahl",
+          "personalVotes": 159,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Tonka Frodlund",
+          "personalVotes": 93,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Vehid Stovrag",
+          "personalVotes": 162,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Renée Sandberg Ohlander",
+          "personalVotes": 33,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Fredrik Dersell",
+          "personalVotes": 97,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Marie Nilsson",
+          "personalVotes": 50,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Kenth Hellqvist",
+          "personalVotes": 71,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Malin Möller",
+          "personalVotes": 123,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Lars Ingvar Johansson",
+          "personalVotes": 33,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Catherine Borgkvist",
+          "personalVotes": 79,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Jan-Olof Rosenberg",
+          "personalVotes": 30,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Nathalie Eriksson",
+          "personalVotes": 74,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Bengt Olsson",
+          "personalVotes": 47,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Eva Ingers",
+          "personalVotes": 40,
+          "districts": []
+        },
+        {
+          "number": 25,
+          "name": "Besnik Zeneli",
+          "personalVotes": 302,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Jenny Lindblom",
+          "personalVotes": 30,
+          "districts": []
+        },
+        {
+          "number": 27,
+          "name": "Peter Danielsson",
+          "personalVotes": 31,
+          "districts": []
+        },
+        {
+          "number": 28,
+          "name": "Michaela Lundin",
+          "personalVotes": 73,
+          "districts": []
+        },
+        {
+          "number": 29,
+          "name": "Tarik El-Ezeh",
+          "personalVotes": 292,
+          "districts": []
+        },
+        {
+          "number": 30,
+          "name": "Tünde Hansen",
+          "personalVotes": 47,
+          "districts": []
+        },
+        {
+          "number": 31,
+          "name": "Stanislav Augustin",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 32,
+          "name": "Filippa Juhl",
+          "personalVotes": 32,
+          "districts": []
+        },
+        {
+          "number": 33,
+          "name": "Muzaffar Khan",
+          "personalVotes": 20,
+          "districts": []
+        },
+        {
+          "number": 34,
+          "name": "Sandra El Ali",
+          "personalVotes": 13,
+          "districts": []
+        },
+        {
+          "number": 35,
+          "name": "André Törnkvist",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 36,
+          "name": "Bodil Englund",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 37,
+          "name": "Sead Konakovic",
+          "personalVotes": 35,
+          "districts": []
+        },
+        {
+          "number": 38,
+          "name": "Pernilla Rydell",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 39,
+          "name": "Joakim Blomqvist",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 40,
+          "name": "Ingela Andersson",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 41,
+          "name": "Tommi Hakkala",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 42,
+          "name": "Yasmine Bladelius",
+          "personalVotes": 19,
+          "districts": []
+        },
+        {
+          "number": 43,
+          "name": "Lennart Eriksson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 44,
+          "name": "Noora Yahya Andersson",
+          "personalVotes": 52,
+          "districts": []
+        },
+        {
+          "number": 45,
+          "name": "Fredrik Brittmar",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 46,
+          "name": "Angelica Möller",
+          "personalVotes": 21,
+          "districts": []
+        },
+        {
+          "number": 47,
+          "name": "Tobias Bixberg",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 48,
+          "name": "Georgina Gullberg",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 49,
+          "name": "Ola Möller",
+          "personalVotes": 32,
+          "districts": []
+        },
+        {
+          "number": 50,
+          "name": "Yvonne Augustin",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 51,
+          "name": "Hans Erik Bergström",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 52,
+          "name": "Lisbeth Lindell",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 53,
+          "name": "Sven Rydström",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 54,
+          "name": "Vilma Carlsen",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 55,
+          "name": "Christer Ottinger",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 56,
+          "name": "Kim Plunteman",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 57,
+          "name": "Shpat Uka",
+          "personalVotes": 74,
+          "districts": []
+        },
+        {
+          "number": 58,
+          "name": "Katarina Kovac Grönberg",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 59,
+          "name": "Slavisa Nikolic",
+          "personalVotes": 29,
+          "districts": []
+        },
+        {
+          "number": 60,
+          "name": "Cris Svitzer",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 61,
+          "name": "Lalitha Sri Nissanka",
+          "personalVotes": 24,
+          "districts": []
+        },
+        {
+          "number": 62,
+          "name": "Rim Badawi",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 63,
+          "name": "Hans-Erik Andersson",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 64,
+          "name": "Margareta Andersson",
+          "personalVotes": 5,
+          "districts": []
+        },
+        {
+          "number": 65,
+          "name": "Markus Strandberg",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 66,
+          "name": "Ann Danielsson",
+          "personalVotes": 3,
+          "districts": []
+        },
+        {
+          "number": 67,
+          "name": "Pär Fransson",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 68,
+          "name": "Anna Ingers",
+          "personalVotes": 19,
+          "districts": []
+        },
+        {
+          "number": 69,
+          "name": "Nemrud Büyükkaya",
+          "personalVotes": 24,
+          "districts": []
+        },
+        {
+          "number": 70,
+          "name": "Emma Fäldt",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 71,
+          "name": "Max Hassan",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 72,
+          "name": "Else-Marie Larsen",
+          "personalVotes": 15,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "V",
+      "name": "Vänsterpartiet",
+      "sourceName": "V�nsterpartiet",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Jenny Björklund Hansson",
+          "personalVotes": 250,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Claudia Cecilia Velasquez",
+          "personalVotes": 98,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Rebecca Thell",
+          "personalVotes": 193,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Joacim Werner Petersson",
+          "personalVotes": 35,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Svjetlana Saric",
+          "personalVotes": 98,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Ferman Büyükkaya",
+          "personalVotes": 101,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Ingrid Mattiasson Saarinen",
+          "personalVotes": 68,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Tomas Gustafsson",
+          "personalVotes": 30,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Qasem Rezai",
+          "personalVotes": 144,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Saera Khan",
+          "personalVotes": 44,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Rana Khazaal",
+          "personalVotes": 85,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Ulla Thell",
+          "personalVotes": 16,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Maja Lanka",
+          "personalVotes": 35,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Peter Ahlbom",
+          "personalVotes": 29,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Gabriella Castillo",
+          "personalVotes": 27,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Leticia Gomez",
+          "personalVotes": 13,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Britta Olsson",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Eskil Rönér",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Birgitta Möller",
+          "personalVotes": 14,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Monica Davidson",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Peter Jonasson",
+          "personalVotes": 14,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Ingemar Karlsson",
+          "personalVotes": 30,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "MP",
+      "name": "Miljöpartiet de gröna",
+      "sourceName": "Milj�partiet de gr�na",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Sofia Kamlund",
+          "personalVotes": 241,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Lars Dalesjö",
+          "personalVotes": 46,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Marcus Friberg",
+          "personalVotes": 116,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Lena Östholm Munkberg",
+          "personalVotes": 43,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Thomas Rödin Hulth",
+          "personalVotes": 52,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Samra Dedic",
+          "personalVotes": 20,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Rickard Persson",
+          "personalVotes": 19,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Anna-Maria Myszka Gustafsson",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Sadibou Haidara",
+          "personalVotes": 32,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Liselotte Lindskog",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Victor Bärring",
+          "personalVotes": 29,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Mette Bryngemark",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Gustaf Wiklund",
+          "personalVotes": 16,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Afeta Ramadanoska",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Ralf Nymberg",
+          "personalVotes": 7,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Britt Sörgärde",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Nader El-Hajj",
+          "personalVotes": 12,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Helene Dahlberg",
+          "personalVotes": 8,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Michael Mania",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Eva Thede",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "William Styrlander",
+          "personalVotes": 20,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Karin Nilsson- Jungermann",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Khaled Maana",
+          "personalVotes": 37,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Eva Storlind",
+          "personalVotes": 3,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Christina Mörtl",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 27,
+          "name": "Bo Alkestrand",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 28,
+          "name": "Fredrik Morberg Jansson",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 29,
+          "name": "Mikael Svensson",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 30,
+          "name": "Fredrik Malmborg",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 31,
+          "name": "Richard Kirkevall",
+          "personalVotes": 0,
+          "districts": []
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Sverigedemokraterna",
+      "sourceName": "Sverigedemokraterna",
+      "candidates": [
+        {
+          "number": 1,
+          "name": "Michael Rosenberg",
+          "personalVotes": 1638,
+          "districts": []
+        },
+        {
+          "number": 2,
+          "name": "Ulrika Persson",
+          "personalVotes": 372,
+          "districts": []
+        },
+        {
+          "number": 3,
+          "name": "Pontus Andersson",
+          "personalVotes": 641,
+          "districts": []
+        },
+        {
+          "number": 4,
+          "name": "Linda Lindberg",
+          "personalVotes": 182,
+          "districts": []
+        },
+        {
+          "number": 5,
+          "name": "Petri Kaldjärv",
+          "personalVotes": 52,
+          "districts": []
+        },
+        {
+          "number": 6,
+          "name": "Ann-Charlotte Eriksson",
+          "personalVotes": 119,
+          "districts": []
+        },
+        {
+          "number": 7,
+          "name": "Alexander Aardgaard",
+          "personalVotes": 36,
+          "districts": []
+        },
+        {
+          "number": 8,
+          "name": "Ingela Gordon",
+          "personalVotes": 30,
+          "districts": []
+        },
+        {
+          "number": 9,
+          "name": "Bengt Lindahl",
+          "personalVotes": 79,
+          "districts": []
+        },
+        {
+          "number": 10,
+          "name": "Britt Aardgaard",
+          "personalVotes": 29,
+          "districts": []
+        },
+        {
+          "number": 11,
+          "name": "Olle Nilsson",
+          "personalVotes": 66,
+          "districts": []
+        },
+        {
+          "number": 12,
+          "name": "Connie Karlsson",
+          "personalVotes": 279,
+          "districts": []
+        },
+        {
+          "number": 13,
+          "name": "Dag Sundius",
+          "personalVotes": 28,
+          "districts": []
+        },
+        {
+          "number": 14,
+          "name": "Maja Asterhag",
+          "personalVotes": 170,
+          "districts": []
+        },
+        {
+          "number": 15,
+          "name": "Magnus Mellgren",
+          "personalVotes": 68,
+          "districts": []
+        },
+        {
+          "number": 16,
+          "name": "Christel Larsson",
+          "personalVotes": 38,
+          "districts": []
+        },
+        {
+          "number": 17,
+          "name": "Per Stenberg",
+          "personalVotes": 43,
+          "districts": []
+        },
+        {
+          "number": 18,
+          "name": "Vicky Jarmo",
+          "personalVotes": 24,
+          "districts": []
+        },
+        {
+          "number": 19,
+          "name": "Flemming Hansen",
+          "personalVotes": 25,
+          "districts": []
+        },
+        {
+          "number": 20,
+          "name": "Viola Nilsson",
+          "personalVotes": 27,
+          "districts": []
+        },
+        {
+          "number": 21,
+          "name": "Anders Bennsten",
+          "personalVotes": 33,
+          "districts": []
+        },
+        {
+          "number": 22,
+          "name": "Pia Klesell",
+          "personalVotes": 17,
+          "districts": []
+        },
+        {
+          "number": 23,
+          "name": "Oskar Sollevi",
+          "personalVotes": 158,
+          "districts": []
+        },
+        {
+          "number": 24,
+          "name": "Liz Edman",
+          "personalVotes": 31,
+          "districts": []
+        },
+        {
+          "number": 25,
+          "name": "Per Lindström",
+          "personalVotes": 72,
+          "districts": []
+        },
+        {
+          "number": 26,
+          "name": "Liselotte Reimer",
+          "personalVotes": 61,
+          "districts": []
+        },
+        {
+          "number": 27,
+          "name": "Jimmy Åstrand",
+          "personalVotes": 38,
+          "districts": []
+        },
+        {
+          "number": 28,
+          "name": "Kristina Bly",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 29,
+          "name": "Bengt Bengtsson",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 31,
+          "name": "Tommy Friberg",
+          "personalVotes": 51,
+          "districts": []
+        },
+        {
+          "number": 32,
+          "name": "Hans Quarfood",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 33,
+          "name": "Yvonne Friberg",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 34,
+          "name": "Mattias Arlefalk",
+          "personalVotes": 27,
+          "districts": []
+        },
+        {
+          "number": 36,
+          "name": "Emil Jansson Vasilcin",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 37,
+          "name": "Lars Isaksson",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 38,
+          "name": "Anders Johnsson",
+          "personalVotes": 35,
+          "districts": []
+        },
+        {
+          "number": 39,
+          "name": "Jens Högberg",
+          "personalVotes": 26,
+          "districts": []
+        },
+        {
+          "number": 40,
+          "name": "Peter Wiström",
+          "personalVotes": 21,
+          "districts": []
+        },
+        {
+          "number": 42,
+          "name": "Stela Rük",
+          "personalVotes": 15,
+          "districts": []
+        },
+        {
+          "number": 44,
+          "name": "Veronica Söderberg",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 45,
+          "name": "Sven Erik Larheim",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 46,
+          "name": "Axel Magnusson",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 47,
+          "name": "Agnetha Klasson",
+          "personalVotes": 11,
+          "districts": []
+        },
+        {
+          "number": 48,
+          "name": "Hans Fernebring",
+          "personalVotes": 0,
+          "districts": []
+        },
+        {
+          "number": 49,
+          "name": "Birgitta Gottschalk",
+          "personalVotes": 2,
+          "districts": []
+        },
+        {
+          "number": 50,
+          "name": "Daniela Gordea",
+          "personalVotes": 6,
+          "districts": []
+        },
+        {
+          "number": 51,
+          "name": "Rickard Rük",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 52,
+          "name": "Hans Olsson",
+          "personalVotes": 9,
+          "districts": []
+        },
+        {
+          "number": 54,
+          "name": "Kari Kajén",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 55,
+          "name": "Mattias Hansson",
+          "personalVotes": 10,
+          "districts": []
+        },
+        {
+          "number": 56,
+          "name": "Dennies Gullberg",
+          "personalVotes": 20,
+          "districts": []
+        },
+        {
+          "number": 57,
+          "name": "Dragan Petreski",
+          "personalVotes": 18,
+          "districts": []
+        },
+        {
+          "number": 58,
+          "name": "Dan Johansson",
+          "personalVotes": 1,
+          "districts": []
+        },
+        {
+          "number": 59,
+          "name": "Lars Böcker",
+          "personalVotes": 60,
+          "districts": []
+        },
+        {
+          "number": 60,
+          "name": "Kurt Marklund",
+          "personalVotes": 4,
+          "districts": []
+        },
+        {
+          "number": 61,
+          "name": "Bo Engström",
+          "personalVotes": 4,
+          "districts": []
+        }
+      ]
+    }
+  ]
+}
