@@ -71,6 +71,8 @@ app.http('comments', {
         })
 
         for await (const entity of entities) {
+          if (entity.hidden === true) continue
+
           comments.push({
             id: entity.rowKey,
             name: entity.name,
@@ -100,7 +102,8 @@ app.http('comments', {
         name,
         text,
         createdAt,
-        pagePath
+        pagePath,
+        hidden: false
       })
 
       return response({ ok: true, comment: { name, text, createdAt, pagePath } }, 201)
