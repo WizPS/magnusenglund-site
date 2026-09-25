@@ -260,6 +260,20 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
+.blog-post-content {
+  max-width: 760px;
+}
+
+.blog-post-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
+}
+
 .eyebrow {
   margin: 0 0 0.4rem;
   color: var(--accent);

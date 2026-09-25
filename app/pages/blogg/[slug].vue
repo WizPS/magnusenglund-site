@@ -54,6 +54,8 @@ const formatDate = (value: string) => {
       <p class="blog-post-meta">Publicerad {{ formatDate(post.date) }}</p>
     </header>
 
-    <ContentRenderer :value="post" />
+    <div class="blog-post-content">
+      <ContentRenderer :value="post" />
+    </div>
   </article>
 </template>

@@ -60,8 +60,10 @@ useHead({
 
       <h2>Det jag tror på</h2>
       <p>
-        Jag tror på ett samhälle där människor får tänka själva, forma sina liv och pröva sina
-        vingar – men också på att frihet och ansvar hör ihop. Jag tror på skolan, tryggheten,
+        Min liberala övertygelse började redan under skolåren på Tycho Braheskolan i Helsingborg
+        och har följt med genom engagemanget i ungdomsförbundet och Liberalerna, där jag under
+        en period var ordförande för FPU i Helsingborg. Jag tror på ett
+        samhälle där människor får tänka själva, forma sina liv och pröva sina vingar – men också på att frihet och ansvar hör ihop. Jag tror på skolan, tryggheten,
         företagsamheten och välfärden. Och jag tror att varje skattekrona ska göra så mycket
         nytta som möjligt hela vägen fram till helsingborgaren.
       </p>
