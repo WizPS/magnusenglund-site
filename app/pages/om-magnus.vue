@@ -32,7 +32,11 @@ useHead({
       <p>
         På 80- och 90-talet drev jag Radio Öresund. Det började med ett intresse för teknik,
         antenner och egna sändarbyggen och växte till en radiostation där fler röster fick höras.
-        Den längre berättelsen om piratradion kommer jag att bygga ut här framöver.
+        I en längre historisk återblick berättar jag om sommaren då <em>Knock on Wood</em> ljöd
+        över ett annars tystat Sverige.
+      </p>
+      <p>
+        <NuxtLink to="/blogg/piratradio-knock-on-wood">Läs berättelsen om piratradion och Radio Öresund →</NuxtLink>
       </p>
       <p>
         Jag är också reservofficer i det svenska luftförsvaret och har utbildat, grupperat och
