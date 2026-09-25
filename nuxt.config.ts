@@ -10,6 +10,12 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'static',
+    devProxy: {
+      '/api': {
+        target: 'http://localhost:7071',
+        changeOrigin: true
+      }
+    },
     prerender: {
       crawlLinks: true,
       routes: [
@@ -21,6 +27,16 @@ export default defineNuxtConfig({
         '/valet-2026',
         '/analys/val-2026'
       ]
+    }
+  },
+  vite: {
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost:7071',
+          changeOrigin: true
+        }
+      }
     }
   },
   routeRules: {
