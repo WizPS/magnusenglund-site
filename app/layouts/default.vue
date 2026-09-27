@@ -37,7 +37,6 @@
 
 .site-shell {
   min-height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -75,6 +74,7 @@
 
 .site-main {
   flex: 1;
+  min-width: 0;
   padding: 2rem 0 3rem;
 }
 

@@ -109,20 +109,10 @@
               <span class="analysis-count-label">Antal</span>
               <span class="analysis-total">
                 {{ formatNumber(selectedParty.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0)) }} totalt
-                <template v-if="show2022Votes && selectedParty2022"> · 2022: {{ formatNumber(totalPersonalVotes2022) }}</template>
+                <template v-if="selectedParty2022"> · 2022: {{ formatNumber(totalPersonalVotes2022) }}</template>
               </span>
             </div>
             <p>Klicka på en kandidats namn för att se antal personröster per valdistrikt. Välj ett annat parti ovan för att utforska dess kandidater.</p>
-            <div class="analysis-results-actions">
-              <Button
-                size="small"
-                label="Visa 2022"
-                severity="success"
-                :outlined="!show2022Votes"
-                :aria-pressed="show2022Votes"
-                @click="show2022Votes = !show2022Votes"
-              />
-            </div>
           </div>
         </div>
 
@@ -133,6 +123,7 @@
             data-key="name"
             sort-field="growthPercent"
             :sort-order="-1"
+            size="small"
             row-hover
             @row-click="handleCandidateRowClick"
             @row-expand="handleCandidateExpand"
@@ -161,7 +152,7 @@
                 <span class="candidate-name">{{ candidate.name }}</span>
               </template>
             </Column>
-            <Column v-if="show2022Votes" field="votes2022" header="2022" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column field="votes2022" header="2022" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
               <template #body="{ data: candidate }">
                 <span class="candidate-votes">{{ candidate.votes2022 === null ? '–' : formatNumber(candidate.votes2022) }}</span>
               </template>
@@ -171,7 +162,7 @@
                 <span class="candidate-votes">{{ formatNumber(candidate.personalVotes) }}</span>
               </template>
             </Column>
-            <Column v-if="show2022Votes" field="growthPercent" header="Ändring" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column field="growthPercent" header="Ändring" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
               <template #body="{ data: candidate }">
                 <span class="candidate-votes">{{ formatPercent(candidate.growthPercent) }}</span>
               </template>
@@ -295,7 +286,6 @@ const selectedPartyCode = ref('L')
 const expandedCandidates = ref({})
 const openingCandidates = ref({})
 const collapsingCandidates = ref({})
-const show2022Votes = ref(true)
 const candidateExpansionDuration = 500
 
 const selectedParty = computed(() => {
@@ -452,6 +442,7 @@ useSeoMeta({
 .analysis-share-image img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -565,15 +556,6 @@ useSeoMeta({
   white-space: nowrap;
 }
 
-.analysis-results-actions {
-  display: grid;
-  justify-items: end;
-  gap: 0.45rem;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-
 .candidate-list {
   display: grid;
   gap: 0.55rem;
@@ -592,14 +574,12 @@ useSeoMeta({
 }
 
 :deep(.candidate-table .p-datatable-thead > tr > th) {
-  padding: 0.55rem 0.75rem;
   color: var(--muted);
   background: #f5f8f2;
   font-size: 0.85rem;
 }
 
 :deep(.candidate-table .p-datatable-tbody > tr > td) {
-  padding: 0.3rem 0.75rem;
   color: var(--text);
   background: var(--card);
   cursor: pointer;
@@ -715,10 +695,6 @@ useSeoMeta({
     margin-top: 0.5rem;
   }
 
-  .analysis-results-actions {
-    width: auto;
-  }
-
   .link-grid {
     grid-template-columns: 1fr;
   }
@@ -728,4 +704,3 @@ useSeoMeta({
   }
 }
 </style>
-
