@@ -1,3 +1,4 @@
+<!-- CommentsSection.vue -->
 <template>
   <section class="comments-section" aria-labelledby="comments-heading">
     <p class="eyebrow">Din kommentar</p>
@@ -30,26 +31,22 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-type CommentItem = {
-  id?: string
-  name: string
-  text: string
-  createdAt: string
-  pagePath?: string
-}
+<script setup>
 
-const props = withDefaults(defineProps<{
-  pagePath?: string
-  title?: string
-  intro?: string
-}>(), {
-  title: 'Vad tänker du?',
-  intro: 'Skriv gärna en kommentar. Ange det namn du själv vill visa. Kommentaren publiceras direkt.'
+const props = defineProps({
+  pagePath: String,
+  title: {
+    type: String,
+    default: 'Vad tänker du?'
+  },
+  intro: {
+    type: String,
+    default: 'Skriv gärna en kommentar. Ange det namn du själv vill visa. Kommentaren publiceras direkt.'
+  }
 })
 
 const route = useRoute()
-const comments = ref<CommentItem[]>([])
+const comments = ref([])
 const commentName = ref('')
 const commentText = ref('')
 const commentsLoading = ref(true)
@@ -57,7 +54,7 @@ const commentSubmitting = ref(false)
 const commentsMessage = ref('')
 const currentPagePath = computed(() => props.pagePath || route.path)
 
-const formatCommentDate = (value: string) => {
+const formatCommentDate = (value) => {
   const date = new Date(value)
   return Number.isNaN(date.getTime())
     ? ''
@@ -69,7 +66,7 @@ const loadComments = async () => {
   commentsMessage.value = ''
 
   try {
-    const result = await $fetch<{ comments: CommentItem[] }>('/api/comments', {
+    const result = await $fetch('/api/comments', {
       query: { page: currentPagePath.value }
     })
     comments.value = result.comments || []
@@ -92,7 +89,7 @@ const submitComment = async () => {
 
   commentSubmitting.value = true
   try {
-    const result = await $fetch<{ comment: CommentItem }>('/api/comments', {
+    const result = await $fetch('/api/comments', {
       method: 'POST',
       body: { name, text, page: currentPagePath.value }
     })

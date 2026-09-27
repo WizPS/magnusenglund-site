@@ -1,3 +1,4 @@
+<!-- val-2026.vue -->
 <template>
   <section class="analysis-page">
     <header class="page-intro">
@@ -249,57 +250,18 @@
     </template>
   </section>
 </template>
-<script setup lang="ts">
+<script setup>
 import electionData from '~/data/val-2026-helsingborg.json'
 import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
 import candidatePositions from '~/data/val-2026-kandidatpositioner-helsingborg.json'
 
-type District = {
-  code: string | null
-  name: string
-  votes: number
-}
-
-type Candidate = {
-  number: number | null
-  name: string
-  personalVotes: number
-  districts: District[]
-}
-
-type TableCandidate = Candidate & {
-  listPosition: number | null
-  votes2022: number | null
-}
-
-type Party = {
-  code: string
-  name: string
-  partyVotes: number
-  candidates: Candidate[]
-}
-
-type ElectionData = {
-  source: {
-    name: string
-    note: string
-    sheet?: string
-    url?: string
-  }
-  municipality: string
-  municipalityCode: string
-  election: string
-  electionType: string
-  parties: Party[]
-}
-
-const data = ref<ElectionData>(electionData as ElectionData)
-const data2022 = electionData2022 as ElectionData
-const error = ref<Error | null>(null)
+const data = ref(electionData)
+const data2022 = electionData2022
+const error = ref(null)
 const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
 
 const selectedPartyCode = ref('L')
-const expandedCandidates = ref<Record<string, boolean>>({})
+const expandedCandidates = ref({})
 const show2022Votes = ref(true)
 
 const selectedParty = computed(() => {
@@ -315,16 +277,16 @@ const totalPersonalVotes2022 = computed(() => {
   return selectedParty2022.value?.candidates.reduce((sum, candidate) => sum + candidate.personalVotes, 0) || 0
 })
 
-const candidateVotes2022 = (candidate: Candidate) => {
+const candidateVotes2022 = (candidate) => {
   return selectedParty2022.value?.candidates.find((previousCandidate) => previousCandidate.name === candidate.name)?.personalVotes ?? null
 }
 
-const candidateListPosition = (candidate: Candidate) => {
-  const partyPositions = (candidatePositions as Record<string, Record<string, number>>)[selectedParty.value?.code || '']
+const candidateListPosition = (candidate) => {
+  const partyPositions = candidatePositions[selectedParty.value?.code || '']
   return partyPositions?.[String(candidate.number)] ?? null
 }
 
-const tableCandidates = computed<TableCandidate[]>(() => {
+const tableCandidates = computed(() => {
   return selectedParty.value.candidates.map((candidate) => ({
     ...candidate,
     listPosition: candidateListPosition(candidate),
@@ -338,9 +300,9 @@ const sortedParties = computed(() => {
   })
 })
 
-const formatNumber = (value: number) => new Intl.NumberFormat('sv-SE').format(value)
+const formatNumber = (value) => new Intl.NumberFormat('sv-SE').format(value)
 
-const toggleCandidateRow = (event: { data: Candidate }) => {
+const toggleCandidateRow = (event) => {
   const key = event.data.name
   const nextExpandedCandidates = { ...expandedCandidates.value }
 

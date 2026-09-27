@@ -1,3 +1,4 @@
+<!-- index.vue -->
 <template>
   <section>
     <header class="page-intro">
@@ -12,18 +13,12 @@
     <BlogList :posts="posts || []" />
   </section>
 </template>
-<script setup lang="ts">
-type BlogPost = {
-  title: string
-  description: string
-  date: string
-  slug: string
-}
+<script setup>
 
 const siteUrl = 'https://magnusenglund.com'
 
-const { data: posts } = await useAsyncData<BlogPost[]>('all-blog-posts', () => {
-  return queryCollection('blogg').order('date', 'DESC').all() as Promise<BlogPost[]>
+const { data: posts } = await useAsyncData('all-blog-posts', () => {
+  return queryCollection('blogg').order('date', 'DESC').all()
 })
 
 useSeoMeta({

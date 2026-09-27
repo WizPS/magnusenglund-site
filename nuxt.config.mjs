@@ -1,3 +1,4 @@
+// nuxt.config.js
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import Aura from '@primeuix/themes/aura'
 
@@ -17,27 +18,6 @@ export default defineNuxtConfig({
     url: 'https://magnusenglund.com',
     name: 'Magnus Englund'
   },
-  nitro: {
-    preset: 'static',
-    devProxy: {
-      '/api': {
-        target: 'http://localhost:7071',
-        changeOrigin: true
-      }
-    },
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/blogg',
-        '/om-magnus',
-        '/pricing',
-        '/engagemang',
-        '/valet-2026',
-        '/analys/val-2026'
-      ]
-    }
-  },
   vite: {
     server: {
       proxy: {
@@ -47,8 +27,5 @@ export default defineNuxtConfig({
         }
       }
     }
-  },
-  routeRules: {
-    '/**': { prerender: true }
   }
 })

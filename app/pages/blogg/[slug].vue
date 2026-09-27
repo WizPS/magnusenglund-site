@@ -1,3 +1,4 @@
+<!-- [slug].vue -->
 <template>
   <article v-if="post">
     <header class="page-intro">
@@ -10,20 +11,14 @@
     </div>
   </article>
 </template>
-<script setup lang="ts">
-type BlogPost = {
-  title: string
-  description: string
-  date: string
-  slug: string
-}
+<script setup>
 
 const route = useRoute()
 const siteUrl = 'https://magnusenglund.com'
-const slug = route.params.slug as string
+const slug = String(route.params.slug)
 
-const { data: post } = await useAsyncData<BlogPost | null>(`blog-post-${slug}`, () => {
-  return queryCollection('blogg').where('slug', '=', slug).first() as Promise<BlogPost | null>
+const { data: post } = await useAsyncData(`blog-post-${slug}`, () => {
+  return queryCollection('blogg').where('slug', '=', slug).first()
 })
 
 if (!post.value) {
@@ -50,7 +45,7 @@ useHead({
   link: [{ rel: 'canonical', href: canonical }]
 })
 
-const formatDate = (value: string) => {
+const formatDate = (value) => {
   return new Date(value).toLocaleDateString('sv-SE', {
     year: 'numeric',
     month: 'long',

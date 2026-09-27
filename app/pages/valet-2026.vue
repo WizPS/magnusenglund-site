@@ -1,3 +1,4 @@
+<!-- valet-2026.vue -->
 <template>
   <section>
     <header class="page-intro">
@@ -68,7 +69,7 @@
     </section>
   </section>
 </template>
-<script setup lang="ts">
+<script setup>
 const siteUrl = 'https://magnusenglund.com'
 
 useSeoMeta({

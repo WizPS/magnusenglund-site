@@ -1,17 +1,16 @@
+<!-- BlogList.vue -->
 <template>
   <section class="blog-list">
     <BlogCard v-for="post in posts" :key="post.slug" :post="post" />
   </section>
 </template>
-<script setup lang="ts">
-defineProps<{
-  posts: Array<{
-    title: string
-    description: string
-    date: string
-    slug: string
-  }>
-}>()
+<script setup>
+defineProps({
+  posts: {
+    type: Array,
+    default: () => []
+  }
+})
 </script>
 
 <style scoped>
