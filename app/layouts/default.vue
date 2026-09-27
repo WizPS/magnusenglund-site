@@ -30,11 +30,14 @@
 <style scoped>
 .container {
   width: min(860px, 92vw);
-  margin: 0 auto;
+  max-width: 100%;
+  margin-inline: auto;
+  align-self: center;
 }
 
 .site-shell {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }

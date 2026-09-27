@@ -131,7 +131,7 @@
             v-model:expanded-rows="expandedCandidates"
             :value="tableCandidates"
             data-key="name"
-            sort-field="personalVotes"
+            sort-field="growthPercent"
             :sort-order="-1"
             row-hover
             @row-click="handleCandidateRowClick"
@@ -139,6 +139,17 @@
             @row-collapse="handleCandidateCollapse"
             class="candidate-table"
           >
+            <Column
+              header="#"
+              header-style="width: 3rem"
+              body-style="width: 3rem"
+              header-class="candidate-index-header"
+              body-class="candidate-index-cell"
+            >
+              <template #body="{ index }">
+                {{ index + 1 }}
+              </template>
+            </Column>
             <Column expander header="" header-style="width: 3rem" body-style="width: 3rem" />
             <Column field="listPosition" header="Plats" sortable header-class="candidate-position-header" body-class="candidate-position-cell">
               <template #body="{ data: candidate }">
@@ -158,6 +169,11 @@
             <Column field="personalVotes" header="2026" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
               <template #body="{ data: candidate }">
                 <span class="candidate-votes">{{ formatNumber(candidate.personalVotes) }}</span>
+              </template>
+            </Column>
+            <Column v-if="show2022Votes" field="growthPercent" header="Ändring" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
+              <template #body="{ data: candidate }">
+                <span class="candidate-votes">{{ formatPercent(candidate.growthPercent) }}</span>
               </template>
             </Column>
             <template #expansion="{ data: candidate }">
@@ -304,11 +320,20 @@ const candidateListPosition = (candidate) => {
   return partyPositions?.[String(candidate.number)] ?? null
 }
 
+const candidateGrowthPercent = (candidate) => {
+  const previousVotes = candidateVotes2022(candidate)
+
+  if (previousVotes === null || previousVotes === 0) return null
+
+  return ((candidate.personalVotes - previousVotes) / previousVotes) * 100
+}
+
 const tableCandidates = computed(() => {
   return selectedParty.value.candidates.map((candidate) => ({
     ...candidate,
     listPosition: candidateListPosition(candidate),
-    votes2022: candidateVotes2022(candidate)
+    votes2022: candidateVotes2022(candidate),
+    growthPercent: candidateGrowthPercent(candidate)
   }))
 })
 
@@ -319,6 +344,17 @@ const sortedParties = computed(() => {
 })
 
 const formatNumber = (value) => new Intl.NumberFormat('sv-SE').format(value)
+const formatPercent = (value) => {
+  if (value === null) return '–'
+
+  const formattedValue = new Intl.NumberFormat('sv-SE', {
+    signDisplay: 'always',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  }).format(value)
+
+  return `${formattedValue} %`
+}
 
 const setCandidateExpansion = (key, shouldExpand) => {
   if (shouldExpand) {
@@ -589,6 +625,11 @@ useSeoMeta({
 
 .candidate-name {
   font-weight: 700;
+}
+
+:deep(.candidate-table .candidate-index-header),
+:deep(.candidate-table .candidate-index-cell) {
+  color: #aab3aa !important;
 }
 
 .candidate-votes {
