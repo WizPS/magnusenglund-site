@@ -3,10 +3,10 @@ title: Björn Skifs, Badrock och en egen själ
 description: En personlig återblick på Björn Skifs, Badrock och Radio Öresunds kultår i Helsingborg.
 date: 2025-07-17
 slug: bjorn-skifs-badrock
-image: /blogg/Björn_Skifs.jpg
+image: /blogg/bjorn_skifs2.jpg
 ---
 
-![Magnus Englund intervjuar Björn Skifs under Badrock-eran](/blogg/Björn_Skifs.jpg)
+![Magnus Englund intervjuar Björn Skifs under Badrock-eran](/blogg/bjorn_skifs2.jpg)
 
 Det gör ont att läsa Björn Skifs ord. En av Sveriges allra största artister har gett oss så mycket glädje, humor och fantastisk musik.
 
