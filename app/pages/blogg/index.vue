@@ -6,7 +6,9 @@
       <h1>Blogg</h1>
       <p>
         Här blandas personliga erfarenheter med politiska analyser om liberalism, skola, försvar,
-        värdeskapande och samhällsengagemang. Inläggen är sorterade med senaste först.
+        värdeskapande och samhällsengagemang. Ibland varvas texterna också med musik, när en låt
+        eller en text bär på en särskild personlig eller samhällelig betydelse. Inläggen är sorterade
+        med senaste först.
       </p>
     </header>
 
