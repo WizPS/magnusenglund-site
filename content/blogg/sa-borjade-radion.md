@@ -3,6 +3,7 @@ title: Så började radion
 description: En personlig återblick på Radio Riga, radiomonopolet och vägen till Radio Öresund.
 date: 2023-11-24
 slug: sa-borjade-radion
+image: /blogg/s_o_radion.jpg
 ---
 
 ![Radio och fri information](/blogg/s_o_radion.jpg)

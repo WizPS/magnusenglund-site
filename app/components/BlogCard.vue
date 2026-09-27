@@ -1,6 +1,9 @@
 <!-- BlogCard.vue -->
 <template>
   <article class="blog-card">
+    <NuxtLink v-if="post.image" :to="`/blogg/${post.slug}`" class="blog-card-image-link">
+      <img :src="post.image" :alt="post.title" class="blog-card-image">
+    </NuxtLink>
     <p class="blog-card-date">{{ formatDate(post.date) }}</p>
     <h2 class="blog-card-title">
       <NuxtLink :to="`/blogg/${post.slug}`">{{ post.title }}</NuxtLink>
@@ -37,6 +40,19 @@ const formatDate = (value) => {
   margin: 0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.blog-card-image-link {
+  display: block;
+  margin: -1rem -1.1rem 1rem;
+}
+
+.blog-card-image {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .blog-card-title {

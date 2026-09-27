@@ -3,6 +3,7 @@ title: Samma måttstock för båda sidor
 description: En reflektion om politiska måttstockar, regeringsinflytande och folkviljan.
 date: 2026-09-27
 slug: samma-mattstock-for-bada-sidor
+image: /blogg/nooshi_jimmie.jpg
 ---
 
 ![Nooshi Dadgostar och Jimmie Åkesson](/blogg/nooshi_jimmie.jpg)

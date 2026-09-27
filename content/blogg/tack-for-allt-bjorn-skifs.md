@@ -3,6 +3,7 @@ title: Tack för allt, Björn Skifs
 description: Ett minne från Radio Öresund, Badrock och en intervju bakom scenen på Sofiero.
 date: 2025-07-17
 slug: tack-for-allt-bjorn-skifs
+image: /blogg/björn_skigs1.jpg
 ---
 
 ![Magnus Englund intervjuar Björn Skifs bakom scenen på Sofiero](/blogg/björn_skigs1.jpg)

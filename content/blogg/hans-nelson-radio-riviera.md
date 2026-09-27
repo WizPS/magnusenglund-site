@@ -3,6 +3,7 @@ title: Hans Nelson, fri radio och Helsingborgs riviera
 description: En personlig återblick på Hans Nelson, Studio 99, Radio Öresund och idéerna som formade Helsingborg.
 date: 2022-08-25
 slug: hans-nelson-radio-riviera
+image: /blogg/hans_nelson.jpg
 ---
 
 ![Hans Nelson](/blogg/hans_nelson.jpg)

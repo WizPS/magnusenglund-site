@@ -3,6 +3,7 @@ title: Stoppa antennen – fri radio kommer aldrig gratis
 description: En återblick på piratradio, radiomonopolet och kampen för fri information i Helsingborg.
 date: 2025-03-27
 slug: stoppa-antennen
+image: /blogg/stoppa_antennen.jpg
 ---
 
 ![Tidningsklipp om kampen mot antenner och fri information](/blogg/stoppa_antennen.jpg)

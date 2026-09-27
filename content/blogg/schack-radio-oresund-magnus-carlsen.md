@@ -3,6 +3,7 @@ title: När Radio Öresund satte staten i schack
 description: En personlig berättelse om schack, kalla kriget, Radio Öresund och Magnus Carlsen.
 date: 2025-08-01
 slug: schack-radio-oresund-magnus-carlsen
+image: /blogg/schack.jpg
 ---
 
 ![Schackbräde](/blogg/schack.jpg)

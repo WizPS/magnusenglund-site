@@ -3,6 +3,7 @@ title: Liberalismens väljarstöd över tid
 description: En personlig analys av hur Liberalernas väljarstöd förändrats och hur politiska vägval kan påverka förtroendet.
 date: 2024-12-20
 slug: liberalismens-valjarstod
+image: /blogg/liberalismens-valjarstod.png
 ---
 
 Den här grafen visar min läsning av hur Liberalernas väljarstöd har utvecklats under de senaste decennierna. Opinionskurvan kommer från [val.digital](https://val.digital/History/). Jag har lagt till politiska händelser för att illustrera möjliga samband.
