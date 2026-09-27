@@ -249,7 +249,6 @@
     </template>
   </section>
 </template>
-
 <script setup lang="ts">
 import electionData from '~/data/val-2026-helsingborg.json'
 import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
@@ -384,3 +383,316 @@ useSeoMeta({
   twitterImageAlt: 'Valanalys 2026 i Helsingborg med Magnus Englund och kandidatlista'
 })
 </script>
+<style scoped>
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.analysis-page .page-intro {
+  margin-bottom: 1.5rem;
+}
+
+.analysis-share-image {
+  margin: 1.5rem 0 2rem;
+}
+
+.analysis-share-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
+}
+
+.analysis-reflection {
+  max-width: 760px;
+  margin: 2rem 0;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--card) 82%, var(--bg-soft));
+}
+
+.analysis-reflection h2 {
+  margin-bottom: 0.75rem;
+}
+
+.analysis-reflection p:last-child {
+  margin-bottom: 0;
+}
+
+.analysis-results-context {
+  border-left-color: #315f92;
+}
+
+.analysis-controls {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 28rem;
+  margin: 1.5rem 0;
+}
+
+.analysis-controls label {
+  font-weight: 700;
+}
+
+.analysis-controls select {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--card);
+  font: inherit;
+}
+
+.analysis-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin: 1.5rem 0 2rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--border);
+}
+
+.analysis-summary > div {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  background: var(--card);
+}
+
+.analysis-summary-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.analysis-results-heading {
+  margin-bottom: 1rem;
+}
+
+.analysis-results-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 18rem);
+  grid-template-rows: auto auto;
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.analysis-results-grid h2 {
+  margin-bottom: 0.35rem;
+}
+
+.analysis-results-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.analysis-results-count {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 0.45rem;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.analysis-count-label,
+.analysis-total {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.analysis-results-actions {
+  display: grid;
+  justify-items: end;
+  gap: 0.45rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.candidate-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.candidate-table {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+:deep(.candidate-table .p-datatable-table) {
+  width: 100%;
+  min-width: 0;
+}
+
+:deep(.candidate-table .p-datatable-thead > tr > th) {
+  padding: 0.55rem 0.75rem;
+  color: var(--muted);
+  background: #f5f8f2;
+  font-size: 0.85rem;
+}
+
+:deep(.candidate-table .p-datatable-tbody > tr > td) {
+  padding: 0.3rem 0.75rem;
+  color: var(--text);
+  background: var(--card);
+  cursor: pointer;
+}
+
+:deep(.candidate-table .p-datatable-tbody > tr.p-datatable-row-expansion > td) {
+  padding: 0;
+  background: #fbfcfa;
+}
+
+:deep(.candidate-table .candidate-votes-header .p-datatable-column-header-content) {
+  justify-content: flex-end;
+}
+
+:deep(.candidate-table .candidate-votes-cell) {
+  text-align: right;
+}
+
+:deep(.candidate-table .candidate-position-header .p-datatable-column-header-content),
+:deep(.candidate-table .candidate-position-cell) {
+  text-align: center;
+}
+
+.candidate-name {
+  font-weight: 700;
+}
+
+.candidate-votes {
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.candidate-detail {
+  padding: 0.2rem 1rem 0.9rem 6rem;
+  background: #fbfcfa;
+  animation: candidate-detail-expand 220ms ease-out both;
+}
+
+@keyframes candidate-detail-expand {
+  from {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-0.35rem);
+  }
+
+  to {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.candidate-detail-heading,
+.district-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 0.45rem 0;
+}
+
+.candidate-detail-heading {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.district-row {
+  border-top: 1px solid #e7eee3;
+}
+
+.empty-detail,
+.analysis-error,
+.analysis-source {
+  color: var(--muted);
+}
+
+.analysis-source {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.analysis-next {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.analysis-next > p:not(.eyebrow) {
+  max-width: 65ch;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.info-card {
+  display: block;
+  padding: 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+}
+
+.info-card h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .analysis-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-results-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 11rem);
+  }
+
+  .analysis-total {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .analysis-results-actions {
+    width: auto;
+  }
+
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-detail {
+    padding-left: 2.75rem;
+  }
+}
+</style>
+

@@ -1,21 +1,3 @@
-<script setup lang="ts">
-const siteUrl = 'https://magnusenglund.com'
-
-useSeoMeta({
-  title: 'Valet 2026 | Magnus Englund',
-  description: 'Arkiv från Magnus Englunds kandidatur för Liberalerna i Helsingborg inför valet 2026.',
-  ogTitle: 'Valet 2026 | Magnus Englund',
-  ogDescription: 'Ett arkiv om kandidaturen, engagemanget och visionen om ett värdefullare Helsingborg.',
-  ogType: 'website',
-  ogUrl: siteUrl + '/valet-2026',
-  ogSiteName: 'Magnus Englund'
-})
-
-useHead({
-  link: [{ rel: 'canonical', href: siteUrl + '/valet-2026' }]
-})
-</script>
-
 <template>
   <section>
     <header class="page-intro">
@@ -86,3 +68,122 @@ useHead({
     </section>
   </section>
 </template>
+<script setup lang="ts">
+const siteUrl = 'https://magnusenglund.com'
+
+useSeoMeta({
+  title: 'Valet 2026 | Magnus Englund',
+  description: 'Arkiv från Magnus Englunds kandidatur för Liberalerna i Helsingborg inför valet 2026.',
+  ogTitle: 'Valet 2026 | Magnus Englund',
+  ogDescription: 'Ett arkiv om kandidaturen, engagemanget och visionen om ett värdefullare Helsingborg.',
+  ogType: 'website',
+  ogUrl: siteUrl + '/valet-2026',
+  ogSiteName: 'Magnus Englund'
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: siteUrl + '/valet-2026' }]
+})
+</script>
+
+<style scoped>
+.page-intro {
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+}
+
+.content-prose {
+  max-width: 720px;
+}
+
+.content-prose h2 {
+  margin-top: 2rem;
+}
+
+.content-prose h2:first-child {
+  margin-top: 0;
+}
+
+.callout,
+.archive-note {
+  margin: 2rem 0;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: var(--bg-soft);
+}
+
+.callout h2 {
+  margin-top: 0;
+}
+
+.callout p:last-child,
+.archive-note p:last-child {
+  margin-bottom: 0;
+}
+
+.archive-note strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.info-card {
+  display: block;
+  padding: 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.info-card:hover,
+.info-card:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgb(26 42 26 / 8%);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.info-card h2,
+.info-card h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.page-section {
+  margin-top: 2.75rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+

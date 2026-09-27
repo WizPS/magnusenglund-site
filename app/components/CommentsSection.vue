@@ -1,3 +1,35 @@
+<template>
+  <section class="comments-section" aria-labelledby="comments-heading">
+    <p class="eyebrow">Din kommentar</p>
+    <h2 id="comments-heading">{{ props.title }}</h2>
+    <p class="comments-intro">{{ props.intro }}</p>
+
+    <form class="comment-form" @submit.prevent="submitComment">
+      <label for="comment-name">Namn</label>
+      <input id="comment-name" v-model="commentName" name="name" maxlength="80" autocomplete="name" required>
+
+      <label for="comment-text">Kommentar</label>
+      <textarea id="comment-text" v-model="commentText" name="comment" maxlength="2000" rows="5" required />
+
+      <button type="submit" :disabled="commentSubmitting">
+        {{ commentSubmitting ? 'Sparar…' : 'Publicera kommentar' }}
+      </button>
+    </form>
+
+    <p v-if="commentsMessage" class="comments-message" aria-live="polite">{{ commentsMessage }}</p>
+    <p v-if="commentsLoading" class="comments-muted">Läser in kommentarer…</p>
+    <p v-else-if="!comments.length" class="comments-muted">Det finns ännu inga kommentarer.</p>
+    <div v-else class="comments-list" aria-label="Publicerade kommentarer">
+      <article v-for="comment in comments" :key="comment.id || `${comment.createdAt}-${comment.name}`" class="comment-card">
+        <div class="comment-meta">
+          <strong>{{ comment.name }}</strong>
+          <time :datetime="comment.createdAt">{{ formatCommentDate(comment.createdAt) }}</time>
+        </div>
+        <p>{{ comment.text }}</p>
+      </article>
+    </div>
+  </section>
+</template>
 <script setup lang="ts">
 type CommentItem = {
   id?: string
@@ -79,35 +111,107 @@ onMounted(loadComments)
 watch(currentPagePath, loadComments)
 </script>
 
-<template>
-  <section class="comments-section" aria-labelledby="comments-heading">
-    <p class="eyebrow">Din kommentar</p>
-    <h2 id="comments-heading">{{ props.title }}</h2>
-    <p class="comments-intro">{{ props.intro }}</p>
+<style scoped>
+.comments-section {
+  max-width: 760px;
+  margin: 2.5rem auto 2.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
 
-    <form class="comment-form" @submit.prevent="submitComment">
-      <label for="comment-name">Namn</label>
-      <input id="comment-name" v-model="commentName" name="name" maxlength="80" autocomplete="name" required>
+.comments-section h2 {
+  margin-bottom: 0.5rem;
+}
 
-      <label for="comment-text">Kommentar</label>
-      <textarea id="comment-text" v-model="commentText" name="comment" maxlength="2000" rows="5" required />
+.comments-intro {
+  max-width: 65ch;
+  color: var(--muted);
+}
 
-      <button type="submit" :disabled="commentSubmitting">
-        {{ commentSubmitting ? 'Sparar…' : 'Publicera kommentar' }}
-      </button>
-    </form>
+.comment-form {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 42rem;
+  margin: 1.5rem 0;
+}
 
-    <p v-if="commentsMessage" class="comments-message" aria-live="polite">{{ commentsMessage }}</p>
-    <p v-if="commentsLoading" class="comments-muted">Läser in kommentarer…</p>
-    <p v-else-if="!comments.length" class="comments-muted">Det finns ännu inga kommentarer.</p>
-    <div v-else class="comments-list" aria-label="Publicerade kommentarer">
-      <article v-for="comment in comments" :key="comment.id || `${comment.createdAt}-${comment.name}`" class="comment-card">
-        <div class="comment-meta">
-          <strong>{{ comment.name }}</strong>
-          <time :datetime="comment.createdAt">{{ formatCommentDate(comment.createdAt) }}</time>
-        </div>
-        <p>{{ comment.text }}</p>
-      </article>
-    </div>
-  </section>
-</template>
+.comment-form label {
+  margin-top: 0.35rem;
+  font-weight: 700;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--card);
+  font: inherit;
+  resize: vertical;
+}
+
+.comment-form button {
+  justify-self: start;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: #fff;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comment-form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.comments-message,
+.comments-muted {
+  color: var(--muted);
+}
+
+.comments-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.comment-card {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+.comment-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-meta time {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.comment-card p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+</style>
+

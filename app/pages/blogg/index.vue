@@ -1,3 +1,17 @@
+<template>
+  <section>
+    <header class="page-intro">
+      <p class="eyebrow">Frihet · ansvar · idédebatt</p>
+      <h1>Blogg</h1>
+      <p>
+        Här blandas personliga erfarenheter med politiska analyser om liberalism, skola, försvar,
+        värdeskapande och samhällsengagemang. Inläggen är sorterade med senaste först.
+      </p>
+    </header>
+
+    <BlogList :posts="posts || []" />
+  </section>
+</template>
 <script setup lang="ts">
 type BlogPost = {
   title: string
@@ -27,17 +41,18 @@ useHead({
 })
 </script>
 
-<template>
-  <section>
-    <header class="page-intro">
-      <p class="eyebrow">Frihet · ansvar · idédebatt</p>
-      <h1>Blogg</h1>
-      <p>
-        Här blandas personliga erfarenheter med politiska analyser om liberalism, skola, försvar,
-        värdeskapande och samhällsengagemang. Inläggen är sorterade med senaste först.
-      </p>
-    </header>
+<style scoped>
+.page-intro {
+  margin-bottom: 1.5rem;
+}
 
-    <BlogList :posts="posts || []" />
-  </section>
-</template>
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+</style>
+

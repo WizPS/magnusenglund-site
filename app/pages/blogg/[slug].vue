@@ -1,3 +1,15 @@
+<template>
+  <article v-if="post">
+    <header class="page-intro">
+      <h1>{{ post.title }}</h1>
+      <p class="blog-post-meta">Publicerad {{ formatDate(post.date) }}</p>
+    </header>
+
+    <div class="blog-post-content">
+      <ContentRenderer :value="post" />
+    </div>
+  </article>
+</template>
 <script setup lang="ts">
 type BlogPost = {
   title: string
@@ -47,15 +59,55 @@ const formatDate = (value: string) => {
 }
 </script>
 
-<template>
-  <article v-if="post">
-    <header class="page-intro">
-      <h1>{{ post.title }}</h1>
-      <p class="blog-post-meta">Publicerad {{ formatDate(post.date) }}</p>
-    </header>
+<style scoped>
+.page-intro {
+  margin-bottom: 1.5rem;
+}
 
-    <div class="blog-post-content">
-      <ContentRenderer :value="post" />
-    </div>
-  </article>
-</template>
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: var(--muted);
+}
+
+.blog-post-content {
+  max-width: 760px;
+}
+
+.blog-post-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
+}
+
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0 2rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #17251b;
+  box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
+}
+
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+</style>
+
