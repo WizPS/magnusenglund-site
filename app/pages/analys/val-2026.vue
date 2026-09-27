@@ -128,6 +128,7 @@
             @row-click="handleCandidateRowClick"
             @row-expand="handleCandidateExpand"
             @row-collapse="handleCandidateCollapse"
+            class="candidate-table"
           >
             <Column
               header="#"
@@ -559,6 +560,10 @@ useSeoMeta({
   opacity: 1;
   transform: translateY(0);
   transition: max-height 500ms ease, opacity 500ms ease, transform 500ms ease;
+}
+
+:deep(.candidate-table .p-datatable-table) {
+  font-size: 0.85rem;
 }
 
 .candidate-detail--opening,
