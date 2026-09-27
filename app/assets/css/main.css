@@ -482,6 +482,11 @@ h3 {
   text-align: right;
 }
 
+.candidate-table .candidate-position-header .p-datatable-column-header-content,
+.candidate-table .candidate-position-cell {
+  text-align: center;
+}
+
 .analysis-comparison-note {
   margin: 0.85rem 0 0;
   padding: 0.7rem 0.9rem;
@@ -508,7 +513,7 @@ h3 {
 }
 
 .candidate-detail {
-  padding: 0.2rem 1rem 0.9rem;
+  padding: 0.2rem 1rem 0.9rem 6rem;
   background: #fbfcfa;
 }
 
@@ -664,6 +669,10 @@ h3 {
 
   .analysis-results-actions {
     width: auto;
+  }
+
+  .candidate-detail {
+    padding-left: 2.75rem;
   }
 
 }

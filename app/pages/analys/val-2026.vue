@@ -128,24 +128,31 @@
         <div class="candidate-list">
           <DataTable
             v-model:expanded-rows="expandedCandidates"
-            :value="selectedParty.candidates"
+            :value="tableCandidates"
             data-key="name"
+            sort-field="personalVotes"
+            :sort-order="-1"
             row-hover
             @row-click="toggleCandidateRow"
             class="candidate-table"
           >
             <Column expander header="" header-style="width: 3rem" body-style="width: 3rem" />
-            <Column header="Kandidat">
+            <Column field="listPosition" header="Plats" sortable header-class="candidate-position-header" body-class="candidate-position-cell">
+              <template #body="{ data: candidate }">
+                <span>{{ candidate.listPosition ?? '–' }}</span>
+              </template>
+            </Column>
+            <Column field="name" header="Kandidat" sortable>
               <template #body="{ data: candidate }">
                 <span class="candidate-name">{{ candidate.name }}</span>
               </template>
             </Column>
-            <Column v-if="show2022Votes" header="2022" header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column v-if="show2022Votes" field="votes2022" header="2022" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
               <template #body="{ data: candidate }">
-                <span class="candidate-votes">{{ candidateVotes2022(candidate) === null ? '–' : formatNumber(candidateVotes2022(candidate) || 0) }}</span>
+                <span class="candidate-votes">{{ candidate.votes2022 === null ? '–' : formatNumber(candidate.votes2022) }}</span>
               </template>
             </Column>
-            <Column header="2026" header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column field="personalVotes" header="2026" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
               <template #body="{ data: candidate }">
                 <span class="candidate-votes">{{ formatNumber(candidate.personalVotes) }}</span>
               </template>
@@ -246,6 +253,7 @@
 <script setup lang="ts">
 import electionData from '~/data/val-2026-helsingborg.json'
 import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
+import candidatePositions from '~/data/val-2026-kandidatpositioner-helsingborg.json'
 
 type District = {
   code: string | null
@@ -258,6 +266,11 @@ type Candidate = {
   name: string
   personalVotes: number
   districts: District[]
+}
+
+type TableCandidate = Candidate & {
+  listPosition: number | null
+  votes2022: number | null
 }
 
 type Party = {
@@ -306,6 +319,19 @@ const totalPersonalVotes2022 = computed(() => {
 const candidateVotes2022 = (candidate: Candidate) => {
   return selectedParty2022.value?.candidates.find((previousCandidate) => previousCandidate.name === candidate.name)?.personalVotes ?? null
 }
+
+const candidateListPosition = (candidate: Candidate) => {
+  const partyPositions = (candidatePositions as Record<string, Record<string, number>>)[selectedParty.value?.code || '']
+  return partyPositions?.[String(candidate.number)] ?? null
+}
+
+const tableCandidates = computed<TableCandidate[]>(() => {
+  return selectedParty.value.candidates.map((candidate) => ({
+    ...candidate,
+    listPosition: candidateListPosition(candidate),
+    votes2022: candidateVotes2022(candidate)
+  }))
+})
 
 const sortedParties = computed(() => {
   return [...(data.value?.parties || [])].sort((a, b) => {
