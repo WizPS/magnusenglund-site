@@ -159,16 +159,29 @@
               </template>
             </Column>
             <template #expansion="{ data: candidate }">
-              <div class="candidate-detail">
-                <div class="candidate-detail-heading">
-                  <span>Valdistrikt</span>
-                  <span>Personröster</span>
-                </div>
+              <div
+                class="candidate-detail"
+                :class="{
+                  'candidate-detail--opening': openingCandidates[candidate.name],
+                  'candidate-detail--collapsing': collapsingCandidates[candidate.name]
+                }"
+              >
                 <div v-if="candidate.districts.length">
-                  <div v-for="district in candidate.districts" :key="district.code || district.name" class="district-row">
-                    <span>{{ district.name }}</span>
-                    <strong>{{ formatNumber(district.votes) }}</strong>
-                  </div>
+                  <DataTable
+                    :value="candidate.districts"
+                    data-key="code"
+                    :paginator="candidate.districts.length > 15"
+                    :rows="15"
+                    :rows-per-page-options="[15, 30, 50]"
+                    size="small"
+                  >
+                    <Column field="name" header="Valdistrikt" />
+                    <Column field="votes" header="Personröster">
+                      <template #body="{ data: district }">
+                        {{ formatNumber(district.votes) }}
+                      </template>
+                    </Column>
+                  </DataTable>
                 </div>
                 <p v-else class="empty-detail">Inga registrerade personröster per valdistrikt.</p>
               </div>
@@ -262,6 +275,8 @@ const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
 
 const selectedPartyCode = ref('L')
 const expandedCandidates = ref({})
+const openingCandidates = ref({})
+const collapsingCandidates = ref({})
 const show2022Votes = ref(true)
 
 const selectedParty = computed(() => {
@@ -304,12 +319,39 @@ const formatNumber = (value) => new Intl.NumberFormat('sv-SE').format(value)
 
 const toggleCandidateRow = (event) => {
   const key = event.data.name
+
+  if (collapsingCandidates.value[key]) {
+    const nextCollapsingCandidates = { ...collapsingCandidates.value }
+    delete nextCollapsingCandidates[key]
+    collapsingCandidates.value = nextCollapsingCandidates
+    return
+  }
+
   const nextExpandedCandidates = { ...expandedCandidates.value }
 
   if (nextExpandedCandidates[key]) {
-    delete nextExpandedCandidates[key]
+    const nextCollapsingCandidates = { ...collapsingCandidates.value, [key]: true }
+    collapsingCandidates.value = nextCollapsingCandidates
+
+    window.setTimeout(() => {
+      const nextExpanded = { ...expandedCandidates.value }
+      const nextCollapsing = { ...collapsingCandidates.value }
+      delete nextExpanded[key]
+      delete nextCollapsing[key]
+      expandedCandidates.value = nextExpanded
+      collapsingCandidates.value = nextCollapsing
+    }, 500)
   } else {
     nextExpandedCandidates[key] = true
+    expandedCandidates.value = nextExpandedCandidates
+
+    openingCandidates.value = { ...openingCandidates.value, [key]: true }
+    window.setTimeout(() => {
+      const nextOpeningCandidates = { ...openingCandidates.value }
+      delete nextOpeningCandidates[key]
+      openingCandidates.value = nextOpeningCandidates
+    }, 16)
+    return
   }
 
   expandedCandidates.value = nextExpandedCandidates
@@ -317,6 +359,8 @@ const toggleCandidateRow = (event) => {
 
 watch(selectedPartyCode, () => {
   expandedCandidates.value = {}
+  openingCandidates.value = {}
+  collapsingCandidates.value = {}
 })
 
 watch(
@@ -550,38 +594,18 @@ useSeoMeta({
 .candidate-detail {
   padding: 0.2rem 1rem 0.9rem 6rem;
   background: #fbfcfa;
-  animation: candidate-detail-expand 220ms ease-out both;
+  overflow: hidden;
+  max-height: 1000px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: max-height 500ms ease, opacity 500ms ease, transform 500ms ease;
 }
 
-@keyframes candidate-detail-expand {
-  from {
-    max-height: 0;
-    opacity: 0;
-    transform: translateY(-0.35rem);
-  }
-
-  to {
-    max-height: 1000px;
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.candidate-detail-heading,
-.district-row {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-  padding: 0.45rem 0;
-}
-
-.candidate-detail-heading {
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.district-row {
-  border-top: 1px solid #e7eee3;
+.candidate-detail--opening,
+.candidate-detail--collapsing {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-0.35rem);
 }
 
 .empty-detail,
