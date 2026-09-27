@@ -126,45 +126,43 @@
         </div>
 
         <div class="candidate-list">
-          <article
-            v-for="candidate in selectedParty.candidates"
-            :key="`${selectedParty.code}-${candidate.number || candidate.name}`"
-            class="candidate-card"
-            :class="{ 'candidate-card-expanded': isExpanded(candidate) }"
-          >
-            <button
-              type="button"
-              class="candidate-toggle"
-              :aria-expanded="isExpanded(candidate)"
-              @click="toggleCandidate(candidate)"
+          <Accordion v-model:value="expandedCandidate">
+            <AccordionPanel
+              v-for="candidate in selectedParty.candidates"
+              :key="candidateKey(candidate)"
+              :value="candidateKey(candidate)"
             >
-              <span class="candidate-name">{{ candidate.name }}</span>
-              <span class="candidate-votes candidate-votes-comparison">
-                <template v-if="show2022Votes">
-                  {{ candidateVotes2022(candidate) === null ? '–' : formatNumber(candidateVotes2022(candidate) || 0) }}
-                  →
-                  {{ formatNumber(candidate.personalVotes) }} personröster
-                </template>
-                <template v-else>
-                  {{ formatNumber(candidate.personalVotes) }} personröster
-                </template>
-              </span>
-            </button>
+              <AccordionHeader>
+                <span class="candidate-name">{{ candidate.name }}</span>
+                <span class="candidate-votes candidate-votes-comparison">
+                  <template v-if="show2022Votes">
+                    {{ candidateVotes2022(candidate) === null ? '–' : formatNumber(candidateVotes2022(candidate) || 0) }}
+                    →
+                    {{ formatNumber(candidate.personalVotes) }} personröster
+                  </template>
+                  <template v-else>
+                    {{ formatNumber(candidate.personalVotes) }} personröster
+                  </template>
+                </span>
+              </AccordionHeader>
 
-            <div v-if="isExpanded(candidate)" class="candidate-detail">
-              <div class="candidate-detail-heading">
-                <span>Valdistrikt</span>
-                <span>Personröster</span>
-              </div>
-              <div v-if="candidate.districts.length">
-                <div v-for="district in candidate.districts" :key="district.code || district.name" class="district-row">
-                  <span>{{ district.name }}</span>
-                  <strong>{{ formatNumber(district.votes) }}</strong>
+              <AccordionContent>
+                <div class="candidate-detail">
+                  <div class="candidate-detail-heading">
+                    <span>Valdistrikt</span>
+                    <span>Personröster</span>
+                  </div>
+                  <div v-if="candidate.districts.length">
+                    <div v-for="district in candidate.districts" :key="district.code || district.name" class="district-row">
+                      <span>{{ district.name }}</span>
+                      <strong>{{ formatNumber(district.votes) }}</strong>
+                    </div>
+                  </div>
+                  <p v-else class="empty-detail">Inga registrerade personröster per valdistrikt.</p>
                 </div>
-              </div>
-              <p v-else class="empty-detail">Inga registrerade personröster per valdistrikt.</p>
-            </div>
-          </article>
+              </AccordionContent>
+            </AccordionPanel>
+          </Accordion>
         </div>
       </section>
 
@@ -314,14 +312,8 @@ const sortedParties = computed(() => {
 
 const formatNumber = (value: number) => new Intl.NumberFormat('sv-SE').format(value)
 
-const toggleCandidate = (candidate: Candidate) => {
-  const key = `${selectedParty.value?.code}-${candidate.number || candidate.name}`
-  expandedCandidate.value = expandedCandidate.value === key ? null : key
-}
-
-const isExpanded = (candidate: Candidate) => {
-  const key = `${selectedParty.value?.code}-${candidate.number || candidate.name}`
-  return expandedCandidate.value === key
+const candidateKey = (candidate: Candidate) => {
+  return `${selectedParty.value?.code}-${candidate.number || candidate.name}`
 }
 
 watch(selectedPartyCode, () => {

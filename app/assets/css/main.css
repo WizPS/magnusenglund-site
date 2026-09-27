@@ -445,6 +445,31 @@ h3 {
   gap: 0.55rem;
 }
 
+.candidate-list .p-accordionpanel {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+.candidate-list .p-accordionheader {
+  color: var(--text);
+  background: var(--card);
+}
+
+.candidate-list .p-accordionheader-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.candidate-list .p-accordioncontent-content {
+  padding: 0;
+}
+
 .analysis-comparison-note {
   margin: 0.85rem 0 0;
   padding: 0.7rem 0.9rem;
@@ -452,37 +477,6 @@ h3 {
   background: rgba(214, 228, 199, 0.55);
   color: var(--ink-soft);
   font-size: 0.9rem;
-}
-
-.candidate-card {
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 9px;
-  background: var(--card);
-}
-
-.candidate-card-expanded {
-  border-color: var(--accent);
-}
-
-.candidate-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  padding: 0.9rem 1rem;
-  border: 0;
-  color: var(--text);
-  background: transparent;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.candidate-toggle:hover,
-.candidate-toggle:focus-visible {
-  background: #f5f8f2;
 }
 
 .candidate-name {
@@ -505,6 +499,7 @@ h3 {
   display: inline-flex;
   gap: 0.45rem;
   align-items: end;
+  margin-left: auto;
   text-align: right;
 }
 
@@ -531,7 +526,6 @@ h3 {
 
 .candidate-detail {
   padding: 0.2rem 1rem 0.9rem;
-  border-top: 1px solid var(--border);
   background: #fbfcfa;
 }
 
