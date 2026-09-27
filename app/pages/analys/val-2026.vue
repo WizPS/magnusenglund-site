@@ -126,43 +126,46 @@
         </div>
 
         <div class="candidate-list">
-          <Accordion v-model:value="expandedCandidate">
-            <AccordionPanel
-              v-for="candidate in selectedParty.candidates"
-              :key="candidateKey(candidate)"
-              :value="candidateKey(candidate)"
-            >
-              <AccordionHeader>
+          <DataTable
+            v-model:expanded-rows="expandedCandidates"
+            :value="selectedParty.candidates"
+            data-key="name"
+            row-hover
+            @row-click="toggleCandidateRow"
+            class="candidate-table"
+          >
+            <Column expander header="" header-style="width: 3rem" body-style="width: 3rem" />
+            <Column header="Kandidat">
+              <template #body="{ data: candidate }">
                 <span class="candidate-name">{{ candidate.name }}</span>
-                <span class="candidate-votes candidate-votes-comparison">
-                  <template v-if="show2022Votes">
-                    {{ candidateVotes2022(candidate) === null ? '–' : formatNumber(candidateVotes2022(candidate) || 0) }}
-                    →
-                    {{ formatNumber(candidate.personalVotes) }} personröster
-                  </template>
-                  <template v-else>
-                    {{ formatNumber(candidate.personalVotes) }} personröster
-                  </template>
-                </span>
-              </AccordionHeader>
-
-              <AccordionContent>
-                <div class="candidate-detail">
-                  <div class="candidate-detail-heading">
-                    <span>Valdistrikt</span>
-                    <span>Personröster</span>
-                  </div>
-                  <div v-if="candidate.districts.length">
-                    <div v-for="district in candidate.districts" :key="district.code || district.name" class="district-row">
-                      <span>{{ district.name }}</span>
-                      <strong>{{ formatNumber(district.votes) }}</strong>
-                    </div>
-                  </div>
-                  <p v-else class="empty-detail">Inga registrerade personröster per valdistrikt.</p>
+              </template>
+            </Column>
+            <Column v-if="show2022Votes" header="2022" header-class="candidate-votes-header" body-class="candidate-votes-cell">
+              <template #body="{ data: candidate }">
+                <span class="candidate-votes">{{ candidateVotes2022(candidate) === null ? '–' : formatNumber(candidateVotes2022(candidate) || 0) }}</span>
+              </template>
+            </Column>
+            <Column header="2026" header-class="candidate-votes-header" body-class="candidate-votes-cell">
+              <template #body="{ data: candidate }">
+                <span class="candidate-votes">{{ formatNumber(candidate.personalVotes) }}</span>
+              </template>
+            </Column>
+            <template #expansion="{ data: candidate }">
+              <div class="candidate-detail">
+                <div class="candidate-detail-heading">
+                  <span>Valdistrikt</span>
+                  <span>Personröster</span>
                 </div>
-              </AccordionContent>
-            </AccordionPanel>
-          </Accordion>
+                <div v-if="candidate.districts.length">
+                  <div v-for="district in candidate.districts" :key="district.code || district.name" class="district-row">
+                    <span>{{ district.name }}</span>
+                    <strong>{{ formatNumber(district.votes) }}</strong>
+                  </div>
+                </div>
+                <p v-else class="empty-detail">Inga registrerade personröster per valdistrikt.</p>
+              </div>
+            </template>
+          </DataTable>
         </div>
       </section>
 
@@ -284,7 +287,7 @@ const error = ref<Error | null>(null)
 const shareImage = 'https://magnusenglund.com/og/valanalys-2026.png'
 
 const selectedPartyCode = ref('L')
-const expandedCandidate = ref<string | null>(null)
+const expandedCandidates = ref<Record<string, boolean>>({})
 const show2022Votes = ref(true)
 
 const selectedParty = computed(() => {
@@ -312,12 +315,21 @@ const sortedParties = computed(() => {
 
 const formatNumber = (value: number) => new Intl.NumberFormat('sv-SE').format(value)
 
-const candidateKey = (candidate: Candidate) => {
-  return `${selectedParty.value?.code}-${candidate.number || candidate.name}`
+const toggleCandidateRow = (event: { data: Candidate }) => {
+  const key = event.data.name
+  const nextExpandedCandidates = { ...expandedCandidates.value }
+
+  if (nextExpandedCandidates[key]) {
+    delete nextExpandedCandidates[key]
+  } else {
+    nextExpandedCandidates[key] = true
+  }
+
+  expandedCandidates.value = nextExpandedCandidates
 }
 
 watch(selectedPartyCode, () => {
-  expandedCandidate.value = null
+  expandedCandidates.value = {}
 })
 
 watch(

@@ -445,29 +445,41 @@ h3 {
   gap: 0.55rem;
 }
 
-.candidate-list .p-accordionpanel {
+.candidate-table {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 9px;
   background: var(--card);
 }
 
-.candidate-list .p-accordionheader {
-  color: var(--text);
-  background: var(--card);
-}
-
-.candidate-list .p-accordionheader-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+.candidate-table .p-datatable-table {
   width: 100%;
   min-width: 0;
 }
 
-.candidate-list .p-accordioncontent-content {
+.candidate-table .p-datatable-thead > tr > th {
+  color: var(--muted);
+  background: #f5f8f2;
+  font-size: 0.85rem;
+}
+
+.candidate-table .p-datatable-tbody > tr > td {
+  color: var(--text);
+  background: var(--card);
+  cursor: pointer;
+}
+
+.candidate-table .p-datatable-tbody > tr.p-datatable-row-expansion > td {
   padding: 0;
+  background: #fbfcfa;
+}
+
+.candidate-table .candidate-votes-header .p-datatable-column-header-content {
+  justify-content: flex-end;
+}
+
+.candidate-table .candidate-votes-cell {
+  text-align: right;
 }
 
 .analysis-comparison-note {
@@ -493,36 +505,6 @@ h3 {
   color: var(--muted);
   font-size: 0.85rem;
   font-weight: 400;
-}
-
-.candidate-votes-comparison {
-  display: inline-flex;
-  gap: 0.45rem;
-  align-items: end;
-  margin-left: auto;
-  margin-right:  1rem;
-  text-align: right;
-}
-
-.candidate-votes-previous,
-.candidate-votes-current {
-  display: inline-flex;
-  gap: 0.2rem;
-  align-items: baseline;
-}
-
-.candidate-votes-previous {
-  color: var(--muted);
-}
-
-.candidate-votes-comparison small {
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 400;
-}
-
-.candidate-votes-comparison > span:last-child {
-  margin-left: 0.1rem;
 }
 
 .candidate-detail {
@@ -684,9 +666,6 @@ h3 {
     width: auto;
   }
 
-  .candidate-votes-comparison {
-    gap: 0.4rem;
-  }
 }
 
 @media (max-width: 700px) {
