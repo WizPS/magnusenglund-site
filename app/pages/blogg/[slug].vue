@@ -65,20 +65,26 @@ const formatDate = (value) => {
 }
 
 .blog-post-content {
+  min-width: 0;
   max-width: 760px;
 }
 
-.blog-post-content img {
+:deep(.blog-post-content img) {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  box-sizing: border-box;
   margin: 1.5rem 0 2rem;
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
 }
 
-.video-embed {
+:deep(.video-embed) {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   position: relative;
   aspect-ratio: 16 / 9;
   margin: 1.5rem 0 2rem;
@@ -89,9 +95,10 @@ const formatDate = (value) => {
   box-shadow: 0 8px 24px rgb(26 42 26 / 10%);
 }
 
-.video-embed iframe {
+:deep(.video-embed iframe) {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   border: 0;
 }
