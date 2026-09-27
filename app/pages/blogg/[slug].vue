@@ -38,7 +38,10 @@ useSeoMeta({
   ogDescription: post.value.description,
   ogType: 'article',
   ogUrl: canonical,
-  ogSiteName: 'Magnus Englund'
+  ogSiteName: 'Magnus Englund',
+  ogImage: post.value.image ? `${siteUrl}${post.value.image}` : undefined,
+  twitterCard: post.value.image ? 'summary_large_image' : 'summary',
+  twitterImage: post.value.image ? `${siteUrl}${post.value.image}` : undefined
 })
 
 useHead({

@@ -562,6 +562,10 @@ useSeoMeta({
   transition: max-height 500ms ease, opacity 500ms ease, transform 500ms ease;
 }
 
+:deep(.candidate-table .p-datatable-tbody > tr) {
+  cursor: pointer;
+}
+
 :deep(.candidate-table .p-datatable-table) {
   font-size: 0.85rem;
 }

@@ -3,6 +3,7 @@ title: Sophie B. Hawkins, friheten och Radio Öresund
 description: En återblick på New York, Sophie B. Hawkins och hur Radio Öresund gav en förbjudet ärlig låt plats i etern.
 date: 2025-04-17
 slug: sophie-b-hawkins-radio-oresund
+image: /blogg/Sohpie-B.-Hawkins-2.jpeg
 video: true
 ---
 
@@ -56,7 +57,7 @@ Få förstod då att radiovärlden i sig var ett slags frigjort community, där 
 
 Detta spreds som en löpeld mellan stationerna. Internet fanns inte heller.
 
-Ett pärlband av amerikanska stationer plockade upp henne och låten direkt och spelade den dygnet runt. WHTZ Z100, med New York Bill i studion, var en av dem. Världens häftigaste station, med en fingertoppskänsla för det rätta som ingen annan.
+Ett pärlband av amerikanska stationer plockade upp henne och låten direkt och spelade den dygnet runt. WHTZ Z100, med Broadway Bill (Bill Lee) i studion, var en av dem. Världens häftigaste station, med en fingertoppskänsla för det rätta som ingen annan.
 
 De hörde vad det var. De förstod – och hela världen följde.
 
