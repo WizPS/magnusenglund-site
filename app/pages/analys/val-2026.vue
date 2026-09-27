@@ -640,5 +640,9 @@ useSeoMeta({
   .candidate-detail {
     padding-left: 2.75rem;
   }
+
+  :deep(.candidate-table .p-datatable-table) {
+    font-size: 0.7rem;
+  }
 }
 </style>
