@@ -134,7 +134,9 @@
             sort-field="personalVotes"
             :sort-order="-1"
             row-hover
-            @row-click="toggleCandidateRow"
+            @row-click="handleCandidateRowClick"
+            @row-expand="handleCandidateExpand"
+            @row-collapse="handleCandidateCollapse"
             class="candidate-table"
           >
             <Column expander header="" header-style="width: 3rem" body-style="width: 3rem" />
@@ -278,6 +280,7 @@ const expandedCandidates = ref({})
 const openingCandidates = ref({})
 const collapsingCandidates = ref({})
 const show2022Votes = ref(true)
+const candidateExpansionDuration = 500
 
 const selectedParty = computed(() => {
   const parties = data.value?.parties || []
@@ -317,35 +320,14 @@ const sortedParties = computed(() => {
 
 const formatNumber = (value) => new Intl.NumberFormat('sv-SE').format(value)
 
-const toggleCandidateRow = (event) => {
-  const key = event.data.name
-
-  if (collapsingCandidates.value[key]) {
+const setCandidateExpansion = (key, shouldExpand) => {
+  if (shouldExpand) {
+    expandedCandidates.value = { ...expandedCandidates.value, [key]: true }
     const nextCollapsingCandidates = { ...collapsingCandidates.value }
     delete nextCollapsingCandidates[key]
     collapsingCandidates.value = nextCollapsingCandidates
-    return
-  }
-
-  const nextExpandedCandidates = { ...expandedCandidates.value }
-
-  if (nextExpandedCandidates[key]) {
-    const nextCollapsingCandidates = { ...collapsingCandidates.value, [key]: true }
-    collapsingCandidates.value = nextCollapsingCandidates
-
-    window.setTimeout(() => {
-      const nextExpanded = { ...expandedCandidates.value }
-      const nextCollapsing = { ...collapsingCandidates.value }
-      delete nextExpanded[key]
-      delete nextCollapsing[key]
-      expandedCandidates.value = nextExpanded
-      collapsingCandidates.value = nextCollapsing
-    }, 500)
-  } else {
-    nextExpandedCandidates[key] = true
-    expandedCandidates.value = nextExpandedCandidates
-
     openingCandidates.value = { ...openingCandidates.value, [key]: true }
+
     window.setTimeout(() => {
       const nextOpeningCandidates = { ...openingCandidates.value }
       delete nextOpeningCandidates[key]
@@ -354,7 +336,31 @@ const toggleCandidateRow = (event) => {
     return
   }
 
-  expandedCandidates.value = nextExpandedCandidates
+  expandedCandidates.value = { ...expandedCandidates.value, [key]: true }
+  collapsingCandidates.value = { ...collapsingCandidates.value, [key]: true }
+
+  window.setTimeout(() => {
+    const nextExpanded = { ...expandedCandidates.value }
+    const nextCollapsing = { ...collapsingCandidates.value }
+    delete nextExpanded[key]
+    delete nextCollapsing[key]
+    expandedCandidates.value = nextExpanded
+    collapsingCandidates.value = nextCollapsing
+  }, candidateExpansionDuration)
+}
+
+const handleCandidateRowClick = (event) => {
+  if (event.originalEvent?.target?.closest('.p-datatable-row-toggle-button')) return
+
+  setCandidateExpansion(event.data.name, !expandedCandidates.value[event.data.name])
+}
+
+const handleCandidateExpand = (event) => {
+  setCandidateExpansion(event.data.name, true)
+}
+
+const handleCandidateCollapse = (event) => {
+  setCandidateExpansion(event.data.name, false)
 }
 
 watch(selectedPartyCode, () => {

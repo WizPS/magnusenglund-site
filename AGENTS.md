@@ -18,6 +18,7 @@
 - Befintliga avvikelser från dessa regler ska rättas när filerna berörs; de ska inte användas som mall för nya ändringar.
 - Bygg inte in extra bakåtkompatibilitet, adapterlager eller parallella kodvägar vid ändringar. Föredra en tydlig och ren ändring framför att bevara gammalt beteende genom ytterligare lager; om ett gammalt API eller beteende inte längre gäller ska det tas bort tydligt.
 - Återanvänd inte kod mekaniskt eller överdrivet. Håll implementationer korta, konsisa och fokuserade på det aktuella behovet.
+- Återanvänd befintlig logik när samma beteende används på flera ställen. Skapa inte dubblerande eller redundanta implementationer om en gemensam funktion, komponent eller stilregel kan användas.
 - PrimeVue ska alltid användas för knappar och motsvarande gränssnittskomponenter när en passande komponent finns.
 - Använd PrimeVues standardtema och standard-CSS först. Skapa egen CSS endast när standardutseendet inte räcker för ett tydligt användarbehov.
 - Lokal CSS ska hållas till ett minimum. Undvik att återskapa PrimeVue-komponenters layout, färger, states eller interaktion med egen CSS.
