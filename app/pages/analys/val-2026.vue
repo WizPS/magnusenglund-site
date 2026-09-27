@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <div class="candidate-list">
+        <div>
           <DataTable
             v-model:expanded-rows="expandedCandidates"
             :value="tableCandidates"
@@ -128,43 +128,38 @@
             @row-click="handleCandidateRowClick"
             @row-expand="handleCandidateExpand"
             @row-collapse="handleCandidateCollapse"
-            class="candidate-table"
           >
             <Column
               header="#"
-              header-style="width: 3rem"
-              body-style="width: 3rem"
-              header-class="candidate-index-header"
-              body-class="candidate-index-cell"
             >
               <template #body="{ index }">
                 {{ index + 1 }}
               </template>
             </Column>
-            <Column expander header="" header-style="width: 3rem" body-style="width: 3rem" />
-            <Column field="listPosition" header="Plats" sortable header-class="candidate-position-header" body-class="candidate-position-cell">
+            <Column expander header="" />
+            <Column field="listPosition" header="Plats" sortable>
               <template #body="{ data: candidate }">
                 <span>{{ candidate.listPosition ?? '–' }}</span>
               </template>
             </Column>
             <Column field="name" header="Kandidat" sortable>
               <template #body="{ data: candidate }">
-                <span class="candidate-name">{{ candidate.name }}</span>
+                {{ candidate.name }}
               </template>
             </Column>
-            <Column field="votes2022" header="2022" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column field="votes2022" header="2022" sortable>
               <template #body="{ data: candidate }">
-                <span class="candidate-votes">{{ candidate.votes2022 === null ? '–' : formatNumber(candidate.votes2022) }}</span>
+                {{ candidate.votes2022 === null ? '–' : formatNumber(candidate.votes2022) }}
               </template>
             </Column>
-            <Column field="personalVotes" header="2026" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column field="personalVotes" header="2026" sortable>
               <template #body="{ data: candidate }">
-                <span class="candidate-votes">{{ formatNumber(candidate.personalVotes) }}</span>
+                {{ formatNumber(candidate.personalVotes) }}
               </template>
             </Column>
-            <Column field="growthPercent" header="Ändring" sortable header-class="candidate-votes-header" body-class="candidate-votes-cell">
+            <Column field="growthPercent" header="Ändring" sortable>
               <template #body="{ data: candidate }">
-                <span class="candidate-votes">{{ formatPercent(candidate.growthPercent) }}</span>
+                {{ formatPercent(candidate.growthPercent) }}
               </template>
             </Column>
             <template #expansion="{ data: candidate }">
@@ -553,68 +548,6 @@ useSeoMeta({
 .analysis-count-label,
 .analysis-total {
   color: var(--muted);
-  white-space: nowrap;
-}
-
-.candidate-list {
-  display: grid;
-  gap: 0.55rem;
-}
-
-.candidate-table {
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 9px;
-  background: var(--card);
-}
-
-:deep(.candidate-table .p-datatable-table) {
-  width: 100%;
-  min-width: 0;
-}
-
-:deep(.candidate-table .p-datatable-thead > tr > th) {
-  color: var(--muted);
-  background: #f5f8f2;
-  font-size: 0.85rem;
-}
-
-:deep(.candidate-table .p-datatable-tbody > tr > td) {
-  color: var(--text);
-  background: var(--card);
-  cursor: pointer;
-}
-
-:deep(.candidate-table .p-datatable-tbody > tr.p-datatable-row-expansion > td) {
-  padding: 0;
-  background: #fbfcfa;
-}
-
-:deep(.candidate-table .candidate-votes-header .p-datatable-column-header-content) {
-  justify-content: flex-end;
-}
-
-:deep(.candidate-table .candidate-votes-cell) {
-  text-align: right;
-}
-
-:deep(.candidate-table .candidate-position-header .p-datatable-column-header-content),
-:deep(.candidate-table .candidate-position-cell) {
-  text-align: center;
-}
-
-.candidate-name {
-  font-weight: 700;
-}
-
-:deep(.candidate-table .candidate-index-header),
-:deep(.candidate-table .candidate-index-cell) {
-  color: #aab3aa !important;
-}
-
-.candidate-votes {
-  color: var(--accent);
-  font-weight: 700;
   white-space: nowrap;
 }
 
