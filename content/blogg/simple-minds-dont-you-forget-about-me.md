@@ -3,6 +3,7 @@ title: Don’t You Forget About Me
 description: En musikalisk återblick på Simple Minds, 80-talet och Radio Öresund.
 date: 2022-09-28
 slug: simple-minds-dont-you-forget-about-me
+video: true
 ---
 
 <div class="video-embed">

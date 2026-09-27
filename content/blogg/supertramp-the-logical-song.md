@@ -3,6 +3,7 @@ title: Supertramp, radioaktivism och hjärnans omkoppling
 description: En personlig återblick på The Logical Song, Radio Luxemburg och vägen till fri radio.
 date: 2025-02-15
 slug: supertramp-the-logical-song
+video: true
 ---
 
 <div class="video-embed">

@@ -3,6 +3,7 @@ title: När radion fortfarande bar människors berättelser
 description: En återblick på 90-talets samhällsberättande, Streets of Philadelphia och Radio Öresunds sista FM-sändning.
 date: 2025-05-15
 slug: streets-of-philadelphia-radiooresund
+video: true
 ---
 
 <div class="video-embed">

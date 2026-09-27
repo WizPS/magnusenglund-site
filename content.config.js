@@ -11,7 +11,8 @@ export default defineContentConfig({
         description: z.string(),
         date: z.string(),
         slug: z.string(),
-        image: z.string().optional()
+        image: z.string().optional(),
+        video: z.boolean().default(false)
       })
     })
   }

@@ -3,6 +3,7 @@ title: 30 år sedan vi tystnade i etern
 description: En nostalgisk återblick på Radio Öresunds sista FM-sändning i Helsingborg den 27 november 1994.
 date: 2025-07-17
 slug: radio-oresund-sista-sandningen
+video: true
 ---
 
 <div class="video-embed">

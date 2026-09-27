@@ -3,6 +3,7 @@ title: Mia Morris – Gone My Way
 description: En upptäckt från serien Världens bästa låtar om Mia Morris och hennes imponerande one-woman-band.
 date: 2024-07-05
 slug: mia-morris-gone-my-way
+video: true
 ---
 
 <div class="video-embed">

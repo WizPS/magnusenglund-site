@@ -3,6 +3,7 @@ title: När den som slog larm blev hela problemet
 description: En reflektion om Sinéad O'Connor, artistförtroende och kostnaden för att protestera mot maktmissbruk.
 date: 2025-03-29
 slug: sinead-oconnor-nothing-compares-2-u
+video: true
 ---
 
 <div class="video-embed">

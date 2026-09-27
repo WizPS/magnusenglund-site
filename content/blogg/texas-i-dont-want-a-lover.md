@@ -3,6 +3,7 @@ title: Texas, frihet och I Don't Want a Lover
 description: En musikalisk återblick på Texas, Sharleen Spiteri och friheten att stå på egna ben.
 date: 2025-06-12
 slug: texas-i-dont-want-a-lover
+video: true
 ---
 
 <div class="video-embed">

@@ -4,6 +4,7 @@
     <NuxtLink v-if="post.image" :to="`/blogg/${post.slug}`" class="blog-card-image-link">
       <img :src="post.image" :alt="post.title" class="blog-card-image">
     </NuxtLink>
+    <span v-if="post.video" class="blog-card-video">▶ Video</span>
     <p class="blog-card-date">{{ formatDate(post.date) }}</p>
     <h2 class="blog-card-title">
       <NuxtLink :to="`/blogg/${post.slug}`">{{ post.title }}</NuxtLink>
@@ -40,6 +41,14 @@ const formatDate = (value) => {
   margin: 0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.blog-card-video {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .blog-card-image-link {

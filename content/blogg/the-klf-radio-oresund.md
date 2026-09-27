@@ -3,6 +3,7 @@ title: The KLF – musik, mysterium och uppror
 description: En återblick på The KLF, deras banbrytande musik och Radio Öresunds fascination för grupper som ville något mer.
 date: 2023-05-01
 slug: the-klf-radio-oresund
+video: true
 ---
 
 <div class="video-embed">

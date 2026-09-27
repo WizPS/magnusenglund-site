@@ -3,6 +3,7 @@ title: Sophie B. Hawkins, friheten och Radio Öresund
 description: En återblick på New York, Sophie B. Hawkins och hur Radio Öresund gav en förbjudet ärlig låt plats i etern.
 date: 2025-04-17
 slug: sophie-b-hawkins-radio-oresund
+video: true
 ---
 
 <div class="video-embed">

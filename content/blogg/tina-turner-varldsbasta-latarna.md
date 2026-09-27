@@ -3,6 +3,7 @@ title: Tina Turner – en av världens bästa
 description: En hyllning till Tina Turner och hennes betydelse under Magnus Englunds radiokarriär.
 date: 2023-05-24
 slug: tina-turner-varldsbasta-latarna
+video: true
 ---
 
 <div class="video-embed">

@@ -3,6 +3,7 @@ title: Rolling Stones vägrar tacka för sig
 description: En reflektion om Rolling Stones, låten Angry och konsten att fortsätta med pondus.
 date: 2024-04-10
 slug: rolling-stones-angry
+video: true
 ---
 
 <div class="video-embed">

@@ -3,6 +3,7 @@ title: The Way It Is – när pianot mötte verkligheten
 description: En återblick på Bruce Hornsby, Radio Öresund och en låt om att förändra det som inte måste förbli som det är.
 date: 2025-10-29
 slug: the-way-it-is-radio-oresund
+video: true
 ---
 
 <div class="video-embed">

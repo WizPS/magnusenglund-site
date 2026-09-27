@@ -3,6 +3,7 @@ title: När Knock on Wood ljöd över ett tystat Sverige
 description: En personlig återblick från Magnus Englunds tid som radiopirat i Helsingborg.
 date: 2026-09-25
 slug: piratradio-knock-on-wood
+video: true
 ---
 
 Här kommer en liten snutt ur min ganska långa tid som radiopirat.

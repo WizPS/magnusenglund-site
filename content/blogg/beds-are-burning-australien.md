@@ -3,6 +3,7 @@ title: Beds Are Burning – en resa som ändrade låten
 description: En personlig återblick på Australien, aboriginernas historia och Midnight Oils protestsång.
 date: 2025-01-30
 slug: beds-are-burning-australien
+video: true
 ---
 
 <div class="video-embed">

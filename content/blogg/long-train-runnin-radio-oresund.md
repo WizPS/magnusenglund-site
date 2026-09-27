@@ -3,6 +3,7 @@ title: Long Train Runnin’ – Radio Öresunds intro
 description: En kort hyllning till The Doobie Brothers och en låt som ofta toppade Radio Öresunds Top 1000.
 date: 2022-08-01
 slug: long-train-runnin-radio-oresund
+video: true
 ---
 
 <div class="video-embed">

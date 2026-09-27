@@ -3,6 +3,7 @@ title: Smalltown Boy – en låt som fortfarande träffar
 description: En återblick på Bronski Beat, Radio Öresund och popmusik som förändrade ungas liv.
 date: 2025-05-08
 slug: smalltown-boy-radio-oresund
+video: true
 ---
 
 <div class="video-embed">

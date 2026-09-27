@@ -3,6 +3,7 @@ title: Låten som dyker upp i huvudet
 description: Om hur en rubrik kan väcka en oväntad låt och ett musikminne.
 date: 2025-04-05
 slug: all-i-wanna-do-is-make-love-to-you
+video: true
 ---
 
 <div class="video-embed">

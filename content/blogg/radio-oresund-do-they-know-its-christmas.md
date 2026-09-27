@@ -3,6 +3,7 @@ title: När Radio Öresund spelade Do They Know It's Christmas?
 description: En historisk återblick från Radio Öresund och närradions stora musikögonblick.
 date: 2022-12-10
 slug: radio-oresund-do-they-know-its-christmas
+video: true
 ---
 
 <div class="video-embed">

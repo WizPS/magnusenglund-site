@@ -3,6 +3,7 @@ title: Där gatorna saknar namn
 description: En musikalisk och politisk återblick på U2, Belfast och takkonserten i Los Angeles.
 date: 2025-04-03
 slug: u2-where-the-streets-have-no-name
+video: true
 ---
 
 <div class="video-embed">
