@@ -5,7 +5,7 @@ date: 2026-09-25
 slug: fria-roster
 ---
 
-Radio Öresund var en del av Helsingborgs moderna radiohistoria. Stationen utvecklades från tidiga mobila och olagliga sändningar till en närradiostation som under många år blev en viktig del av stadens musik- och föreningsliv.
+Radio Öresund är en del av Helsingborgs moderna radiohistoria. Stationen utvecklades från tidiga mobila och olagliga sändningar till en närradiostation som under många år blev en viktig del av stadens musik- och föreningsliv.
 
 Den historiska sammanställning jag utgår från beskriver en piratperiod från mitten av 1970-talet till början av 1980-talet och därefter Radio Öresund som närradiostation fram till 1994. Piratsändningarna låg omkring 100–102 MHz, medan närradion senare sände på 99,2 MHz.
 

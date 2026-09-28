@@ -28,7 +28,7 @@ Vi sände från Söderåsen, Kullaberg, hustak, lottatorn och gamla ruiner – i
 
 Jag minns exakt när jag fick tag i mitt första USA-pressade exemplar av *Knock on Wood*. Det kostade en förmögenhet. Pengarna behövdes också till slutsteg, riktantenner, maströr, autorevers-bandspelare och komponenter från utlandet.
 
-Utrustningen finansierades genom sommarjobb i växthus, arbete på bensinmack och en och annan spelning som DJ med hemmabyggd utrustning och dyrköpta skivor.
+Utrustningen finansierades genom sommarjobb i växthus, arbete på bensinmack och såklart en hel del spelningar som DJ med hemmabyggd utrustning och dyrköpta skivor, som denna USA-specialpressade 12-tums maxisingelversion av *Knock on Wood*.
 
 ## När musiken nådde fram
 
