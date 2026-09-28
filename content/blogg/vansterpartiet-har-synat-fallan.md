@@ -3,10 +3,10 @@ title: Vänsterpartiet har synat fällan
 description: En analys av varför Vänsterpartiets stöd till Andreas Norlén kan handla mer om självbevarelse än om partipolitisk vänskap.
 date: 2026-09-28
 slug: vansterpartiet-har-synat-fallan
-image: /blogg/magdalena.jpg
+image: /blogg/magda_noshi.jpg
 ---
 
-![Magdalena Andersson](/blogg/magdalena.jpg)
+![Magdalena Andersson och Nooshi Dadgostar](/blogg/magda_noshi.jpg)
 
 Medier missar nu vad som ligger bakom Vänsterpartiets stöd till Andreas Norlén.
 
