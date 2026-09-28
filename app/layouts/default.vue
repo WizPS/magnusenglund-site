@@ -1,3 +1,4 @@
+<!-- default.vue -->
 <template>
   <div class="site-shell">
     <header class="site-header">
@@ -9,7 +10,7 @@
           <NuxtLink to="/pricing">Pricing</NuxtLink>
           <NuxtLink to="/engagemang">Engagemang</NuxtLink>
           <NuxtLink to="/analys/val-2026">Valanalys</NuxtLink>
-          <NuxtLink to="/blogg">Blogg</NuxtLink>
+          <NuxtLink to="/blogg" :class="{ 'router-link-active': isBlogRoute }">Blogg</NuxtLink>
         </nav>
       </div>
     </header>
@@ -26,6 +27,11 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+const route = useRoute()
+const isBlogRoute = computed(() => route.path === '/blogg' || route.path.startsWith('/blogg/'))
+</script>
 
 <style scoped>
 .container {

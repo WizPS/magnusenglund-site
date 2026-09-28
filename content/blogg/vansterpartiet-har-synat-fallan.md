@@ -8,7 +8,7 @@ image: /blogg/magdalena.jpg
 
 ![Magdalena Andersson](/blogg/magdalena.jpg)
 
-Medier missar nu helt vad som kan ligga bakom Vänsterpartiets stöd till Andreas Norlén.
+Medier missar nu vad som ligger bakom Vänsterpartiets stöd till Andreas Norlén.
 
 Det här handlar inte om att V utmanar Socialdemokraterna. Det handlar om att V har synat spelet och gör det enda drag som kan rädda partiet självt från den uppenbara fälla som väntar.
 
