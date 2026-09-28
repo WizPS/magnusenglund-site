@@ -32,7 +32,7 @@ Med Norlén som talman blir det sannolikt C som får det sista avgörandet. Utan
 
 Nu kastar Magdalena Andersson taktiskt in handduken innan det ens gått till omröstning. Om hon hade gått vidare som första hade Ulf Kristersson kunnat bli det sista förslaget. Nu kan Magdalena i stället själv hamna sist – och då är det Vänsterpartiet igen som riskerar att kastas under bussen.
 
-## Ett självförsvar, inte en kärleksförklaring eller knäpp på näsan
+## Ett självförsvar, inte en kärleksförklaring eller ens knäpp på näsan
 
 Norlénhistorien handlar alltså väldigt lite om att V plötsligt blivit förtjust i en moderat talman eller vill maktpositionera sig mot S.
 
