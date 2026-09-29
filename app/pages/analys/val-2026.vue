@@ -101,7 +101,7 @@
         </div>
       </section>
 
-      <section class="analysis-results" aria-labelledby="candidate-heading">
+      <section id="personroster" class="analysis-results" aria-labelledby="candidate-heading">
         <div class="analysis-results-heading">
           <div class="analysis-results-grid">
             <h2 id="candidate-heading">Personröster</h2>
@@ -121,6 +121,9 @@
             v-model:expanded-rows="expandedCandidates"
             :value="tableCandidates"
             data-key="name"
+            :paginator="tableCandidates.length > 15"
+            :rows="15"
+            :rows-per-page-options="[15, 30, 50, 100]"
             sort-field="growthPercent"
             :sort-order="-1"
             size="small"
@@ -177,7 +180,7 @@
                     data-key="code"
                     :paginator="candidate.districts.length > 15"
                     :rows="15"
-                    :rows-per-page-options="[15, 30, 50]"
+                    :rows-per-page-options="[15, 30, 50, 100]"
                     size="small"
                   >
                     <Column field="name" header="Valdistrikt" />
@@ -191,8 +194,112 @@
                 <p v-else class="empty-detail">Inga registrerade personröster per valdistrikt.</p>
               </div>
             </template>
+            <template #footer>
+              <Button
+                label="Ladda ner Excel"
+                severity="secondary"
+                outlined
+                @click="downloadCandidateTable"
+              />
+            </template>
           </DataTable>
         </div>
+      </section>
+
+      <section id="forandring-rostandel" class="district-change-analysis" aria-labelledby="district-change-heading">
+        <p class="eyebrow">Valdistrikt</p>
+        <h2 id="district-change-heading">{{ districtTableTitle }}</h2>
+        <SelectButton
+          v-model="districtTableMode"
+          :options="districtTableModes"
+          option-label="label"
+          option-value="value"
+          aria-label="Välj visning av röstandel"
+        />
+        <SelectButton
+          v-model="districtShareYear"
+          :options="districtShareYears"
+          option-label="label"
+          option-value="value"
+          :disabled="districtTableMode === 'change'"
+          aria-label="Välj valår för faktisk röstandel"
+        />
+        <p v-if="districtTableMode === 'change'">
+          Tabellen visar förändringen i procentenheter mellan valen för varje parti. Den är hämtad
+          från den pivoterade sammanställningen i arbetsboken.
+        </p>
+        <p v-else>
+          Tabellen visar den faktiska röstandelen i varje valdistrikt för respektive parti.
+        </p>
+
+        <DataTable
+          :key="districtTableMode"
+          v-model:filters="districtFilters"
+          :value="districtTableRows"
+          data-key="valdistrikt"
+          :paginator="districtTableRows.length > 15"
+          :rows="15"
+          :rows-per-page-options="[15, 30, 50, 100]"
+          :sort-field="districtTableSortField"
+          :sort-order="-1"
+          size="small"
+          filter-display="row"
+          :show-filter-menu="false"
+          scrollable
+          class="district-change-table"
+        >
+          <Column
+            field="valdistrikt"
+            header="Valdistrikt"
+            sortable
+            filter
+            :show-filter-menu="false"
+            :style="{ width: '10rem', minWidth: '10rem' }"
+            frozen
+          >
+            <template #filter="{ filterModel, filterCallback }">
+              <InputText
+              size="small"
+                v-model="filterModel.value"
+                class="district-filter-input"
+                type="text"
+                placeholder="Sök"
+                @input="filterCallback()"
+              />
+            </template>
+          </Column>
+          <Column
+            v-for="party in districtChangeParties"
+            :key="party.field"
+            :field="party.field"
+            :header="party.header"
+            sortable
+          >
+            <template #body="{ data: row }">
+              {{ formatPercentagePoints(row[party.field]) }}
+            </template>
+          </Column>
+          <Column field="grandTotal" header="Totalt" sortable>
+            <template #body="{ data: row }">
+              {{ formatPercentagePoints(row.grandTotal) }}
+            </template>
+          </Column>
+          <template #footer>
+            <Button
+              label="Ladda ner Excel"
+              severity="secondary"
+              outlined
+              @click="downloadDistrictTable"
+            />
+          </template>
+        </DataTable>
+
+        <p v-if="districtTableMode === 'change'" class="analysis-source">
+          Totalt för alla valdistrikt:
+          <span v-for="party in districtChangeParties" :key="party.field">
+            {{ party.header }} {{ formatPercentagePoints(districtChangeGrandTotal[party.field]) }}<template v-if="party !== districtChangeParties[districtChangeParties.length - 1]"> · </template>
+          </span>
+        </p>
       </section>
 
       <p class="analysis-source">
@@ -272,6 +379,7 @@
 import electionData from '~/data/val-2026-helsingborg.json'
 import electionData2022 from '~/data/val-2022-personroster-helsingborg.json'
 import candidatePositions from '~/data/val-2026-kandidatpositioner-helsingborg.json'
+import districtVoteChangeData from '~/data/valdistrikt-forandring-pivot.json'
 
 const data = ref(electionData)
 const data2022 = electionData2022
@@ -360,7 +468,52 @@ const sortedParties = computed(() => {
   })
 })
 
+const districtChangeParties = districtVoteChangeData.parties.map((code) => ({
+  field: code,
+  header: code
+}))
+
+const districtChangeRows = districtVoteChangeData.rows
+const districtChangeGrandTotal = districtVoteChangeData.grandTotal
+const districtTableModes = [
+  { label: 'Förändring', value: 'change' },
+  { label: 'Faktisk röstandel', value: 'share' }
+]
+const districtTableMode = ref('change')
+const districtShareYears = [
+  { label: '2022', value: '2022' },
+  { label: '2026', value: '2026' }
+]
+const districtShareYear = ref('2026')
+const districtFilters = ref({
+  valdistrikt: { value: null, matchMode: 'contains' }
+})
+const districtTableRows = computed(() => {
+  if (districtTableMode.value !== 'share') return districtChangeRows
+
+  return districtShareYear.value === '2022'
+    ? districtVoteChangeData.shareRows2022
+    : districtVoteChangeData.shareRows
+})
+const districtTableTitle = computed(() => {
+  return districtTableMode.value === 'share'
+    ? `Faktisk röstandel per valdistrikt ${districtShareYear.value}`
+    : 'Förändring i röstandel per valdistrikt'
+})
+const districtTableSortField = computed(() => {
+  return districtTableMode.value === 'share' ? districtChangeParties[0].field : 'grandTotal'
+})
+
 const formatNumber = (value) => new Intl.NumberFormat('sv-SE').format(value)
+const formatPercentagePoints = (value) => {
+  if (value === null || value === undefined) return '–'
+
+  return `${new Intl.NumberFormat('sv-SE', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+    signDisplay: 'always'
+  }).format(value)} %`
+}
 const formatPercent = (value) => {
   if (value === null) return '–'
 
@@ -371,6 +524,69 @@ const formatPercent = (value) => {
   }).format(value)
 
   return `${formattedValue} %`
+}
+
+const csvCell = (value) => {
+  return `"${String(value ?? '').replaceAll('"', '""')}"`
+}
+
+const downloadCsv = (filename, headers, rows) => {
+  const csv = [headers, ...rows]
+    .map((row) => row.map(csvCell).join(';'))
+    .join('\r\n')
+  const blob = new Blob([`\ufeff${csv}`], { type: 'text/csv;charset=utf-8;' })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+
+  link.href = url
+  link.download = filename
+  link.click()
+  URL.revokeObjectURL(url)
+}
+
+const downloadCandidateTable = () => {
+  const rows = tableCandidates.value.map((candidate, index) => [
+    index + 1,
+    candidate.listPosition ?? '–',
+    candidate.name,
+    candidate.votes2022 === null ? '–' : formatNumber(candidate.votes2022),
+    candidate.personalVotes === null ? '–' : formatNumber(candidate.personalVotes),
+    formatPercent(candidate.growthPercent)
+  ])
+
+  downloadCsv(
+    `personroster-${selectedParty.value?.code || 'parti'}.csv`,
+    ['#', 'Plats', 'Kandidat', '2022', '2026', 'Ändring'],
+    rows
+  )
+}
+
+const districtTableDownloadRows = computed(() => {
+  const search = districtFilters.value.valdistrikt.value?.trim().toLocaleLowerCase('sv-SE')
+
+  if (!search) return districtTableRows.value
+
+  return districtTableRows.value.filter((row) => {
+    return row.valdistrikt.toLocaleLowerCase('sv-SE').includes(search)
+  })
+})
+
+const downloadDistrictTable = () => {
+  const headers = [
+    'Valdistrikt',
+    ...districtChangeParties.map((party) => party.header),
+    'Totalt'
+  ]
+  const rows = districtTableDownloadRows.value.map((row) => [
+    row.valdistrikt,
+    ...districtChangeParties.map((party) => formatPercentagePoints(row[party.field])),
+    formatPercentagePoints(row.grandTotal)
+  ])
+  const suffix = districtTableMode.value === 'change'
+    ? 'forandring'
+    : `rostandel-${districtShareYear.value}`
+
+  downloadCsv(`valdistrikt-${suffix}.csv`, headers, rows)
 }
 
 const setCandidateExpansion = (key, shouldExpand) => {
@@ -546,6 +762,11 @@ useSeoMeta({
   margin-bottom: 1rem;
 }
 
+#personroster,
+#forandring-rostandel {
+  scroll-margin-top: 1rem;
+}
+
 .analysis-results-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 18rem);
@@ -617,6 +838,36 @@ useSeoMeta({
 .analysis-source {
   margin-top: 1.5rem;
   font-size: 0.9rem;
+}
+
+.district-change-analysis {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.district-change-analysis > p:not(.eyebrow) {
+  max-width: 65ch;
+}
+
+:deep(.district-change-table .p-datatable-table) {
+  min-width: 52rem;
+}
+
+:deep(.district-change-table .p-datatable-thead > tr > th),
+:deep(.district-change-table .p-datatable-tbody > tr > td) {
+  white-space: nowrap;
+}
+
+:deep(.district-change-table .p-datatable-thead > tr > th:first-child),
+:deep(.district-change-table .p-datatable-tbody > tr > td:first-child) {
+  width: 10rem !important;
+  min-width: 10rem !important;
+  max-width: 10rem !important;
+}
+
+.district-filter-input {
+  width: 8rem;
 }
 
 .analysis-next {
