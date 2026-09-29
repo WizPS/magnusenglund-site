@@ -155,7 +155,7 @@
             </Column>
             <Column field="personalVotes" header="2026" sortable>
               <template #body="{ data: candidate }">
-                {{ formatNumber(candidate.personalVotes) }}
+                {{ candidate.personalVotes === null ? '–' : formatNumber(candidate.personalVotes) }}
               </template>
             </Column>
             <Column field="growthPercent" header="Ändring" sortable>
@@ -315,12 +315,43 @@ const candidateGrowthPercent = (candidate) => {
 }
 
 const tableCandidates = computed(() => {
-  return selectedParty.value.candidates.map((candidate) => ({
-    ...candidate,
-    listPosition: candidateListPosition(candidate),
-    votes2022: candidateVotes2022(candidate),
-    growthPercent: candidateGrowthPercent(candidate)
-  }))
+  const candidates = selectedParty.value.candidates
+  const partyPositions = candidatePositions[selectedParty.value?.code || ''] || {}
+  const candidatesByNumber = new Map(candidates.map((candidate) => [String(candidate.number), candidate]))
+  const mergedCandidates = Object.entries(partyPositions).map(([number, listPosition]) => {
+    const candidate = candidatesByNumber.get(number)
+
+    if (candidate) {
+      return {
+        ...candidate,
+        listPosition,
+        votes2022: candidateVotes2022(candidate),
+        growthPercent: candidateGrowthPercent(candidate)
+      }
+    }
+
+    return {
+      number: Number(number),
+      name: `Kandidat saknas i röstdata (plats ${listPosition})`,
+      personalVotes: null,
+      districts: [],
+      listPosition,
+      votes2022: null,
+      growthPercent: null,
+      missingFromVotes: true
+    }
+  })
+
+  const candidatesWithNoPosition = candidates
+    .filter((candidate) => !partyPositions[String(candidate.number)])
+    .map((candidate) => ({
+      ...candidate,
+      listPosition: candidateListPosition(candidate),
+      votes2022: candidateVotes2022(candidate),
+      growthPercent: candidateGrowthPercent(candidate)
+    }))
+
+  return [...mergedCandidates, ...candidatesWithNoPosition]
 })
 
 const sortedParties = computed(() => {
