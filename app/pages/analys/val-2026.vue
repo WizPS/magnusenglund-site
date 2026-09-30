@@ -292,6 +292,7 @@
                 @input="filterCallback()"
               />
             </template>
+            <template #footer>Totalt</template>
           </Column>
           <Column
             v-for="party in districtChangeParties"
@@ -307,6 +308,9 @@
                 {{ formatDistrictValue(row[party.field]) }}
               </span>
             </template>
+            <template #footer>
+              {{ formatDistrictValue(districtTableFooterValue(party.field)) }}
+            </template>
           </Column>
           <Column
             field="soffa"
@@ -320,6 +324,9 @@
                 {{ formatDistrictValue(row.soffa) }}
               </span>
             </template>
+            <template #footer>
+              {{ formatDistrictValue(districtTableFooterValue('soffa')) }}
+            </template>
           </Column>
           <Column
             field="grandTotal"
@@ -332,6 +339,9 @@
               <span :class="{ 'negative-value': districtTableGrandTotalValue(row) < 0 }">
                 {{ formatDistrictValue(districtTableGrandTotalValue(row)) }}
               </span>
+            </template>
+            <template #footer>
+              {{ formatDistrictValue(districtTableFooterValue('grandTotal')) }}
             </template>
           </Column>
           <template #footer>
@@ -584,6 +594,32 @@ const districtTableGrandTotalValue = (row) => {
   if (districtTableMode.value === 'share' && districtValueMode.value === 'percent') return 100
 
   return row.grandTotal
+}
+const districtTableFooterValue = (field) => {
+  const rows = districtTableDownloadRows.value
+
+  if (districtTableMode.value !== 'share' || districtValueMode.value === 'count') {
+    return rows.reduce((total, row) => total + (row[field] || 0), 0)
+  }
+
+  if (field === 'grandTotal') return 100
+
+  const countRows = districtShareYear.value === '2022'
+    ? districtVoteChangeData.countRows2022
+    : districtVoteChangeData.countRows
+  const selectedDistricts = new Set(rows.map((row) => row.valdistrikt))
+  const selectedCountRows = countRows.filter((row) => selectedDistricts.has(row.valdistrikt))
+  const totalVotes = selectedCountRows.reduce((total, row) => total + (row.grandTotal || 0), 0)
+
+  if (!totalVotes) return null
+
+  if (field === 'soffa') {
+    const sofaVotes = selectedCountRows.reduce((total, row) => total + (row.soffa || 0), 0)
+    return (sofaVotes / (totalVotes + sofaVotes)) * 100
+  }
+
+  const partyVotes = selectedCountRows.reduce((total, row) => total + (row[field] || 0), 0)
+  return (partyVotes / totalVotes) * 100
 }
 const districtChangeSummaryValue = (party) => {
   if (districtValueMode.value === 'percent') return districtChangeGrandTotal[party]
@@ -956,8 +992,13 @@ useSeoMeta({
 }
 
 :deep(.district-change-table .p-datatable-thead > tr > th),
-:deep(.district-change-table .p-datatable-tbody > tr > td) {
+:deep(.district-change-table .p-datatable-tbody > tr > td),
+:deep(.district-change-table .p-datatable-tfoot > tr > td) {
   white-space: nowrap;
+}
+
+:deep(.district-change-table .p-datatable-tfoot > tr > td:not(:first-child)) {
+  text-align: right;
 }
 
 :deep(.district-change-table .p-datatable-thead > tr > th:first-child),
