@@ -20,6 +20,10 @@ Under Lars Leijonborgs ledarskap gav en tydlig blå ansvarspolitik Liberalerna e
 
 Alliansen gav en stabil borgerlig riktning, men finanskrisen satte regeringspartierna under press.
 
+LUF:s intrång i SAPNET får ändå beskrivas som begränsat. Det handlade om SSU-medlemmar som var vänner med LUF-medlemmar. LUF:are avslöjade att en person med behörig åtkomst, som kallade sig ”Sigge”, använde användarnamnet och lösenordet ”sigge”. Uppgifterna hade läckt ut, och några LUF-medlemmar roade sig med att logga in.
+
+Trots det rapporterade SVT händelsen intensivt som skandalös i flera veckor och gjorde den till en huvudnyhet både före och efter valet 2006.
+
 ## 2014 – Decemberöverenskommelsen, DÖ
 
 DÖ gav Stefan Löfven makten som statsminister och innebar att Alliansen släppte fram den rödgröna regeringen med budget. Det var en vänstergir som gjorde att Liberalerna släppte sin borgerliga profil och stödet rasade med en relativ faktor på 31 procent.
