@@ -40,7 +40,7 @@ Ett tydligare borgerligt samarbete lyfte först Liberalernas stöd jämfört med
 
 En återkommande slutsats i seminariet var att en tydlig borgerlig blågul politik byggd på ”frihet under ansvar” är helt avgörande. Väljarna behöver förstå vad partiet står för och vilket resultat politiken ger. Mediernas rapportering påverkar också hur politiken uppfattas: även framgångar riskerar att drunkna om andra aktörer får sätta berättelsen.
 
-En viktig slutsats var att liberalismen inte är under attack. Problemet är snarare att partiet har förvaltat den på ett sätt som inte varit förankrat i den egna väljarbasen – eller i den liberala grundidén.
+En viktig slutsats var att liberalismen inte tvunget är under attack. Problemet är snarare att partiet har förvaltat den på ett sätt som inte varit förankrat i den egna väljarbasen – eller i den liberala grundidén.
 
 När [**Simona Mohamsson**](https://www.facebook.com/SMohamsson) tydligt deklarerade att Liberalerna inte ska göra fler vänstergirar började förtroendet komma tillbaka. Men vändningen hann inte fullt ut märkas i region- och kommunvalen. Med ett tydligare ledarskap och en nystart har Liberalerna goda möjligheter att gå en ljusare framtid till mötes.
 
